@@ -1,5 +1,5 @@
 {
-    "name": "hackzilla/adwords",
+    "name": "theodo/adwords",
     "description": "Wrapper for Google Adwords API",
     "keywords": ["google", "adwords", "api", "soa", "oap", "soap", "wsdl", "library", "client"],
     "type": "library",
