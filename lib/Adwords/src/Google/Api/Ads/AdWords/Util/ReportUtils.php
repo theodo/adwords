@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\AdWords\Util;
+
 /**
  * A collection of utility methods for working with reports.
  *
@@ -27,10 +30,11 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-require_once dirname(__FILE__) . '/../Lib/AdWordsUser.php';
-require_once dirname(__FILE__) . '/../../Common/Util/CurlUtils.php';
-require_once dirname(__FILE__) . '/../../Common/Util/Logger.php';
-require_once dirname(__FILE__) . '/../../Common/Util/XmlUtils.php';
+
+use Google\Api\Ads\AdWords\Lib\AdWordsUser;
+use Google\Api\Ads\Common\Util\CurlUtils,
+    Google\Api\Ads\Common\Util\Logger,
+    Google\Api\Ads\Common\Util\XmlUtils;
 
 /**
  * A collection of utility methods for working with reports.
@@ -285,7 +289,7 @@ class ReportUtils {
    */
   private static function GetQueryParams($reportQuery, $reportFormat) {
     if (!is_string($reportQuery) or !is_string($reportFormat)) {
-      throw new ReportDownloadException(
+      throw new \ReportDownloadExceptionn(
           'Invalid parameter supplied, string is expected'
       );
     }
@@ -364,25 +368,6 @@ class ReportUtils {
     $messageParts[] = ''; // Blank line for readability.
     $message = implode("\n", $messageParts);
     Logger::Log(self::$LOG_NAME, $message, $level);
-  }
-}
-
-/**
- * Exception class for an error that occurs while downloading a report.
- * @package GoogleApiAdsAdWords
- * @subpackage Util
- */
-class ReportDownloadException extends Exception {
-  /**
-   * Constructor for ReportDownloadException.
-   * @param string $error an optional error message
-   * @param string $httpCode an optional HTTP status code of the response
-   */
-  public function __construct($error = NULL, $httpCode = NULL) {
-    if (empty($error)) {
-      $error = 'Report download failed with status code: ' . $httpCode;
-    }
-    parent::__construct($error, $httpCode);
   }
 }
 

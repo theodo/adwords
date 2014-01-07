@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\Common\Util;
+
 /**
  * A collection of utility methods for working with cURL.
  *
@@ -50,7 +53,7 @@ class CurlUtils {
     $this->SetOpt($ch, CURLOPT_ENCODING, 'gzip');
     $this->SetOpt($ch, CURLOPT_USERAGENT, 'curl, gzip');
 
-    // Proxy options.
+    // Proxy options.t
     if (defined('HTTP_PROXY_HOST') && HTTP_PROXY_HOST != '') {
       $this->SetOpt($ch, CURLOPT_PROXY, HTTP_PROXY_HOST);
     }

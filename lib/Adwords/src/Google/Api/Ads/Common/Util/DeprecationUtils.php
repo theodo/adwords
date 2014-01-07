@@ -1,4 +1,6 @@
 <?php
+
+namespace Google\Api\Ads\Common\Util;
 /**
  * A collection of utility methods for deprecation purposes.
  *
@@ -26,7 +28,7 @@
  *             Version 2.0
  * @author     Paul Matthews
  */
-require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
+use Google\Api\Ads\Common\Lib\AdsUser;
 
 /**
  * A collection of utility methods for deprecation purposes.

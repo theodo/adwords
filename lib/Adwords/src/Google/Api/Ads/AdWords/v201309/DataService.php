@@ -28,7 +28,7 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("DateRange", FALSE)) {
 /**
@@ -405,9 +405,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1570,11 +1570,11 @@ class DataErrorReason {
 if (!class_exists("getAdGroupBidLandscape", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of bid landscapes for the ad groups specified in the selector.
- * 
+ *
  * @param serviceSelector Selects the entities to return bid landscapes for.
  * @return A list of bid landscapes.
  * @throws ApiException when there is at least one error with the request.
@@ -1611,7 +1611,7 @@ class getAdGroupBidLandscape {
 
 if (!class_exists("getAdGroupBidLandscapeResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1646,11 +1646,11 @@ class getAdGroupBidLandscapeResponse {
 if (!class_exists("getCriterionBidLandscape", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of bid landscapes for the criteria specified in the selector.
- * 
+ *
  * @param serviceSelector Selects the entities to return bid landscapes for.
  * @return A list of bid landscapes.
  * @throws ApiException when there is at least one error with the request.
@@ -1687,7 +1687,7 @@ class getCriterionBidLandscape {
 
 if (!class_exists("getCriterionBidLandscapeResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3239,11 +3239,11 @@ class DataService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of bid landscapes for the ad groups specified in the selector.
-   * 
+   *
    * @param serviceSelector Selects the entities to return bid landscapes for.
    * @return A list of bid landscapes.
    * @throws ApiException when there is at least one error with the request.
@@ -3257,11 +3257,11 @@ class DataService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of bid landscapes for the criteria specified in the selector.
-   * 
+   *
    * @param serviceSelector Selects the entities to return bid landscapes for.
    * @return A list of bid landscapes.
    * @throws ApiException when there is at least one error with the request.

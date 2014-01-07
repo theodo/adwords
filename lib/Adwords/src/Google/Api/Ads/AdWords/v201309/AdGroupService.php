@@ -28,7 +28,7 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("DateRange", FALSE)) {
 /**
@@ -556,9 +556,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1114,7 +1114,7 @@ class BiddingScheme {
 if (!class_exists("BiddingStrategyConfiguration", FALSE)) {
 /**
  * Encapsulates the information about bids and bidding strategies.
- * 
+ *
  * Bidding Strategy can be set on campaigns, ad groups or ad group criteria.
  * A bidding strategy can be set using one of the following:
  * <ul>
@@ -1124,11 +1124,11 @@ if (!class_exists("BiddingStrategyConfiguration", FALSE)) {
  * flexible bid strategies.</li>
  * </ul>
  * If the bidding strategy type is used, then schemes are created using default values.
- * 
+ *
  * Bids can be set only on ad groups and ad group criteria. They cannot be set on campaigns.
  * Multiple bids can be set at the same time. Only the bids that apply to the campaign's
  * {@linkplain Campaign#biddingStrategyConfiguration bidding strategy} will be used.
- * 
+ *
  * For more information on flexible bidding, visit the
  * <a href="https://support.google.com/adwords/answer/2979071">Help Center</a>.
  * @package GoogleApiAdsAdWords
@@ -1862,7 +1862,7 @@ class ConversionOptimizerBiddingSchemeBidType {
 
 if (!class_exists("ConversionOptimizerBiddingSchemePricingMode", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2376,7 +2376,7 @@ class OperatorErrorReason {
 
 if (!class_exists("PageOnePromotedBiddingSchemeStrategyGoal", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2837,12 +2837,12 @@ class StringLengthErrorReason {
 if (!class_exists("AdGroupServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of all the ad groups specified by the selector
  * from the target customer's account.
- * 
+ *
  * @param serviceSelector The selector specifying the {@link AdGroup}s to return.
  * @return List of adgroups identified by the selector.
  * @throws ApiException when there is at least one error with the request.
@@ -2879,7 +2879,7 @@ class AdGroupServiceGet {
 
 if (!class_exists("AdGroupServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2918,14 +2918,14 @@ if (!class_exists("AdGroupServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Adds, updates, or deletes ad groups.
  * <p class="note"><b>Note:</b> {@link AdGroupOperation} does not support the
  * {@code REMOVE} operator. To delete an ad group, set its
  * {@link AdGroup#status status} to {@code DELETED}.</p>
- * 
+ *
  * @param operations List of unique operations. The same ad group cannot be
  * specified in more than one operation.
  * @return The updated adgroups.
@@ -2962,7 +2962,7 @@ class AdGroupServiceMutate {
 
 if (!class_exists("AdGroupServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2997,11 +2997,11 @@ class AdGroupServiceMutateResponse {
 if (!class_exists("query", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns the list of ad groups that match the query.
- * 
+ *
  * @param query The SQL-like AWQL query string
  * @return A list of adgroups
  * @throws ApiException
@@ -3038,7 +3038,7 @@ class query {
 
 if (!class_exists("queryResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3393,15 +3393,15 @@ if (!class_exists("ConversionOptimizerBiddingScheme", FALSE)) {
 /**
  * Conversion optimizer bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.
- * 
+ *
  * <p class="warning">{@code pricingMode} currently defaults to {@code CLICKS} and
  * cannot be changed.</p>
- * 
+ *
  * <p>Note that campaigns must meet <a
  * href="//support.google.com/adwords/bin/answer.py?answer=2471188">specific
- * eligibility requirements</a> before they can use the <code>ConversionOptimizer</code>
+ * eligibility requirements</a> before they can use the <code>ConversionOptimizer<\code>
  * bidding strategy.
- * 
+ *
  * For more information on conversion optimizer, visit the
  * <a href="http://www.google.com/adwords/conversionoptimizer/index.html"
  * >Conversion Optimizer site</a>.
@@ -3528,7 +3528,7 @@ if (!class_exists("EnhancedCpcBiddingScheme", FALSE)) {
 /**
  * Enhanced CPC is a bidding strategy that raises your bids for clicks that seem more likely to
  * lead to a conversion and lowers them for clicks where they seem less likely.
- * 
+ *
  * This bidding scheme does not support criteria level bidding strategy overrides.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -5131,14 +5131,14 @@ if (!class_exists("TargetCpaBiddingScheme", FALSE)) {
 /**
  * Target Cpa bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.
- * 
+ *
  * This is similar to the <code>ConversionOptimizerBiddingScheme<code> but does not
  * support user-entered AdGroup-level target CPA bids, but rather a strategy-wide
  * average CPA target.
- * 
+ *
  * <p>Note that campaigns must meet <a
  * href="//support.google.com/adwords/bin/answer.py?answer=2471188">specific
- * eligibility requirements</a> before they can use the <code>TargetCpaBiddingScheme</code>
+ * eligibility requirements</a> before they can use the <code>TargetCpaBiddingScheme<\code>
  * bidding strategy.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -5177,7 +5177,7 @@ class TargetCpaBiddingScheme extends BiddingScheme {
 if (!class_exists("TargetSpendBiddingScheme", FALSE)) {
 /**
  * Target Spend bidding scheme, in which Google automatically places
- * bids for the user based on their daily/monthly budget or optional
+ * bids for the user based on their daily\monthly budget or optional
  * spend target.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -5751,12 +5751,12 @@ class AdGroupService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of all the ad groups specified by the selector
    * from the target customer's account.
-   * 
+   *
    * @param serviceSelector The selector specifying the {@link AdGroup}s to return.
    * @return List of adgroups identified by the selector.
    * @throws ApiException when there is at least one error with the request.
@@ -5774,14 +5774,14 @@ class AdGroupService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Adds, updates, or deletes ad groups.
    * <p class="note"><b>Note:</b> {@link AdGroupOperation} does not support the
    * {@code REMOVE} operator. To delete an ad group, set its
    * {@link AdGroup#status status} to {@code DELETED}.</p>
-   * 
+   *
    * @param operations List of unique operations. The same ad group cannot be
    * specified in more than one operation.
    * @return The updated adgroups.
@@ -5795,11 +5795,11 @@ class AdGroupService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns the list of ad groups that match the query.
-   * 
+   *
    * @param query The SQL-like AWQL query string
    * @return A list of adgroups
    * @throws ApiException

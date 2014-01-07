@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\AdWords\Lib;
+
 /**
  * An extension of the {@link AdsSoapClient} for the AdWords API.
  *
@@ -27,7 +30,8 @@
  * @author     Adam Rogal
  * @see        AdsSoapClient
  */
-require_once dirname(__FILE__) . '/../../Common/Lib/AdsSoapClient.php';
+use Google\Api\Ads\Common\Lib\AdsSoapClient,
+    Google\Api\Ads\Common\Lib\AdsUser;
 
 /**
  * An extension of the {@link AdsSoapClient} for the AdWords API.
@@ -85,7 +89,7 @@ class AdWordsSoapClient extends AdsSoapClient {
     foreach (get_object_vars($headerObject) as $var => $value) {
       $headerObject->$var = $this->GetHeaderValue($var);
     }
-    return new SoapHeader($this->serviceNamespace, 'RequestHeader',
+    return new \SoapHeader($this->serviceNamespace, 'RequestHeader',
         $headerObject, FALSE);
   }
 
@@ -138,7 +142,7 @@ class AdWordsSoapClient extends AdsSoapClient {
       }
 
       return $operatorString . '}';
-    } catch (DOMException $e) {
+    } catch (\DOMException $e) {
       // TODO(api.arogal): Log failures to retrieve headers.
       return 'null';
     }
@@ -155,7 +159,7 @@ class AdWordsSoapClient extends AdsSoapClient {
       foreach ($operationsElements as $operationsElement) {
         return $operationsElement->nodeValue;
       }
-    } catch (DOMException $e) {
+    } catch (\DOMException $e) {
       // TODO(api.arogal): Log failures to retrieve headers.
       return 'null';
     }
@@ -172,7 +176,7 @@ class AdWordsSoapClient extends AdsSoapClient {
       foreach ($unitsElements as $unitsElement) {
         return $unitsElement->nodeValue;
       }
-    } catch (DOMException $e) {
+    } catch (\DOMException $e) {
       // TODO(api.arogal): Log failures to retrieve headers.
       return 'null';
     }

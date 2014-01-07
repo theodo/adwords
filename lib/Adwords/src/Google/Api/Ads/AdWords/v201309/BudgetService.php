@@ -28,7 +28,7 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("AssociatedCampaign", FALSE)) {
 /**
@@ -467,9 +467,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -994,7 +994,7 @@ class Page {
 
 if (!class_exists("AssociatedCampaignBudgetCampaignAssociationStatus", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1021,7 +1021,7 @@ class AssociatedCampaignBudgetCampaignAssociationStatus {
 
 if (!class_exists("AssociatedCampaignCampaignStatus", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1156,7 +1156,7 @@ class BudgetBudgetPeriod {
 
 if (!class_exists("BudgetBudgetStatus", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1916,11 +1916,11 @@ class StringLengthErrorReason {
 if (!class_exists("BudgetServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of budgets that match the selector.
- * 
+ *
  * @return List of budgets specified by the selector.
  * @throws com.google.ads.api.services.common.error.ApiException if problems
  * occurred while retrieving results.
@@ -1957,7 +1957,7 @@ class BudgetServiceGet {
 
 if (!class_exists("BudgetServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1995,11 +1995,11 @@ if (!class_exists("BudgetServiceMutate", FALSE)) {
  * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Applies the list of mutate operations.
- * 
+ *
  * @param operations The operations to apply.
  * @return The modified list of Budgets, returned in the same order as <code>operations</code>.
  * @throws ApiException
@@ -2036,7 +2036,7 @@ class BudgetServiceMutate {
 
 if (!class_exists("BudgetServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3555,11 +3555,11 @@ class BudgetService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of budgets that match the selector.
-   * 
+   *
    * @return List of budgets specified by the selector.
    * @throws com.google.ads.api.services.common.error.ApiException if problems
    * occurred while retrieving results.
@@ -3576,11 +3576,11 @@ class BudgetService extends AdWordsSoapClient {
    * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Applies the list of mutate operations.
-   * 
+   *
    * @param operations The operations to apply.
    * @return The modified list of Budgets, returned in the same order as <code>operations</code>.
    * @throws ApiException

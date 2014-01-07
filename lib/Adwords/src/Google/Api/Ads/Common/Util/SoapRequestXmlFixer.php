@@ -1,4 +1,6 @@
 <?php
+
+namespace Google\Api\Ads\Common\Util;
 /**
  * The SOAP XML request fixer used to fix some inconsistencies among the
  * different versions of the PHP SoapClient.
@@ -29,7 +31,7 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-require_once 'Google/Api/Ads/Common/Util/XmlUtils.php';
+use Google\Api\Ads\Common\Util\XmlUtils;
 
 /**
  * The SOAP XML request fixer used to fix some inconsistencies among the
@@ -70,7 +72,7 @@ class SoapRequestXmlFixer {
    */
   public function FixXml($request, array $arguments, array $headers) {
     $requestDom = XmlUtils::GetDomFromXml($request);
-    $xpath = new DOMXPath($requestDom);
+    $xpath = new \DOMXPath($requestDom);
 
     // Fix headers.
     $headersDomNodes = $xpath->query(
@@ -101,8 +103,8 @@ class SoapRequestXmlFixer {
    * @param array $objects the objects array matching <var>$nodeList</var>
    * @param DOMXPath $xpath the xpath object representing the DOM
    */
-  private function FixXmlNodes(DOMNodeList $nodeList, array $objects,
-      DOMXPath $xpath) {
+  private function FixXmlNodes(\DOMNodeList $nodeList, array $objects,
+      \DOMXPath $xpath) {
     if ($nodeList->length == sizeof($objects)) {
       $i = 0;
       foreach ($objects as $object) {
@@ -118,10 +120,10 @@ class SoapRequestXmlFixer {
    * @param mixed $object the object matching <var>$node</var>
    * @param DOMXPath $xpath the xpath object representing the DOM
    */
-  private function FixXmlNode(DOMNode $node, $object, DOMXPath $xpath) {
-    if ($object instanceof SoapHeader) {
+  private function FixXmlNode(\DOMNode $node, $object, \DOMXPath $xpath) {
+    if ($object instanceof \SoapHeader) {
       $this->FixXmlNode($node, $object->data, $xpath);
-    } elseif ($object instanceof SoapVar) {
+    } elseif ($object instanceof \SoapVar) {
       $this->FixXmlNode($node, $object->enc_value, $xpath);
     } else {
       if ($this->addXsiTypes && is_object($object)) {
@@ -159,7 +161,7 @@ class SoapRequestXmlFixer {
    * @param $object the object used to determine the xsi:type
    * @access private
    */
-  private function AddXsiType(DOMNode $domNode, $object) {
+  private function AddXsiType(\DOMNode $domNode, $object) {
     $xsiType = $domNode->getAttributeNS(self::$XSI_NAMESPACE, 'xsi:type');
     if (method_exists($object, 'getXsiTypeName')
         && method_exists($object, 'getNamespace')
@@ -179,8 +181,8 @@ class SoapRequestXmlFixer {
    * @param DOMXPath $xpath the xpath object representing the DOM
    * @access private
    */
-  private function ReplaceElementReference(DOMElement $elementReference,
-      DOMXPath $xpath) {
+  private function ReplaceElementReference(\DOMElement $elementReference,
+      \DOMXPath $xpath) {
     $href = $elementReference->getAttribute('href');
     if (version_compare(PHP_VERSION, '5.2.2', '>=')
         && version_compare(PHP_VERSION, '5.2.4', '<')) {
@@ -204,7 +206,7 @@ class SoapRequestXmlFixer {
    * @param DOMXPath $xpath the xpath object representing the DOM
    * @access private
    */
-  private function RemoveIdAttributes(DOMXPath $xpath) {
+  private function RemoveIdAttributes(\DOMXPath $xpath) {
     $elements = $xpath->query('//*[@id]');
     for ($i = 0; $i < $elements->length; $i++) {
       $element = $elements->item($i);
@@ -217,7 +219,7 @@ class SoapRequestXmlFixer {
    * @param DOMXPath $xpath the xpath object representing the DOM
    * @access private
    */
-  private function RemoveEmptyHeaderElements(DOMXPath $xpath) {
+  private function RemoveEmptyHeaderElements(\DOMXPath $xpath) {
     $requestHeaderDom = $xpath->query(
         "//*[local-name()='Envelope']/*[local-name()='Header']"
             . "/*[local-name()='RequestHeader']")->item(0);

@@ -28,15 +28,15 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -687,13 +687,13 @@ if (!class_exists("FeedFunction", FALSE)) {
  * resulting in a return value. It has the form
  * (Operand... Operator Operand...). The type of the return value depends on
  * the operator being applied and the type of the operands.
- * 
+ *
  * <p class="special">Operands per function is limited to <b>20</b>.</p>
- * 
+ *
  * <p>Here is a code example:</p>
- * 
+ *
  * <pre><code>
- * 
+ *
  * // For example "feed_attribute == 30" can be represented as:
  * FeedId feedId = (FeedId of Feed associated with feed_attribute)
  * FeedAttributeId feedAttributeId = (FeedAttributeId of feed_attribute)
@@ -703,10 +703,10 @@ if (!class_exists("FeedFunction", FALSE)) {
  * function.setOperator(Operator.IN);
  * function.setRhsOperand(
  * Arrays.asList((Operand) new ConstantOperand(30L)));
- * 
+ *
  * // Another example matching on multiple values:
  * "feed_item_id IN (10, 20, 30)" can be represented as:
- * 
+ *
  * Function function = new Function();
  * function.setLhsOperand(
  * Arrays.asList((Operand) new RequestContextOperand(ContextType.FEED_ITEM_ID)));
@@ -2918,11 +2918,11 @@ class StringLengthErrorReason {
 if (!class_exists("CampaignFeedServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of CampaignFeeds that meet the selector criteria.
- * 
+ *
  * @param selector Determines which CampaignFeeds to return. If empty all
  * Campaign feeds are returned.
  * @return The list of CampaignFeeds.
@@ -2960,7 +2960,7 @@ class CampaignFeedServiceGet {
 
 if (!class_exists("CampaignFeedServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2997,11 +2997,11 @@ if (!class_exists("CampaignFeedServiceMutate", FALSE)) {
  * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Adds, sets or removes CampaignFeeds.
- * 
+ *
  * @param operations The operations to apply.
  * @return The resulting Feeds.
  * @throws ApiException Indicates a problem with the request.
@@ -3038,7 +3038,7 @@ class CampaignFeedServiceMutate {
 
 if (!class_exists("CampaignFeedServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3326,7 +3326,7 @@ class FunctionOperand extends FunctionArgumentOperand {
 
 if (!class_exists("NullStatsPage", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3514,11 +3514,11 @@ class CampaignFeedService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of CampaignFeeds that meet the selector criteria.
-   * 
+   *
    * @param selector Determines which CampaignFeeds to return. If empty all
    * Campaign feeds are returned.
    * @return The list of CampaignFeeds.
@@ -3535,11 +3535,11 @@ class CampaignFeedService extends AdWordsSoapClient {
    * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Adds, sets or removes CampaignFeeds.
-   * 
+   *
    * @param operations The operations to apply.
    * @return The resulting Feeds.
    * @throws ApiException Indicates a problem with the request.

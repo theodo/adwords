@@ -1,4 +1,10 @@
 <?php
+
+namespace Google\Api\Ads\AdWords\Lib;
+
+use Google\Api\Ads\Common\Lib\SoapClientFactory,
+    Google\Api\Ads\Common\Lib\AdsUser;
+
 /**
  * Factory class for SOAP clients for the AdWords API.
  *
@@ -27,8 +33,6 @@
  * @author     Adam Rogal
  * @see        SoapClientFactory
  */
-require_once dirname(__FILE__) . '/../../Common/Lib/AdsUser.php';
-require_once dirname(__FILE__) . '/../../Common/Lib/SoapClientFactory.php';
 
 /**
  * Factory class for SOAP clients for the AdWords API.
@@ -50,7 +54,7 @@ class AdWordsSoapClientFactory extends SoapClientFactory {
   public function __construct(AdsUser $user, $version, $server, $validateOnly,
       $partialFailure) {
     if ($version >= 'v201109' && $user->GetHeaderValue('clientEmail') != NULL) {
-      throw new Exception('The header "clientEmail" is not compatible with '
+      throw new \Exception('The header "clientEmail" is not compatible with '
           . 'versions v201109 and later. Use clientCustomerId instead.');
     }
     $headerOverrides = array();

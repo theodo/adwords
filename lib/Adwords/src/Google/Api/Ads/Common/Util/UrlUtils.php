@@ -1,4 +1,6 @@
 <?php
+
+namespace Google\Api\Ads\Common\Util;
 /**
  * A collection of utility methods for working with URLs.
  *

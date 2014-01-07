@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\Common\Lib;
+
 /**
  * Base class for all SOAP client factories of Ads client libraries.
  *
@@ -28,7 +31,6 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
 
 /**
  * Base class for all SOAP client factories of Ads client libraries.
@@ -110,6 +112,7 @@ abstract class SoapClientFactory {
           self::GetCompressionKind() |
           $this->GetAdsUser()->GetSoapCompressionLevel();
       // The User-Agent HTTP header must contain the string 'gzip'.
+      // The User-Agent HTTP header must contain the string 'gzip'.
       $options['user_agent'] = 'PHP-SOAP/'. phpversion() . ', gzip';
     }
 
@@ -174,7 +177,7 @@ abstract class SoapClientFactory {
   protected function GetServiceLocation($serviceName) {
     $classVars = get_class_vars($serviceName);
     $endpoint = $classVars['endpoint'];
-    return preg_replace(SoapClientFactory::$SERVER_REGEX, $this->GetServer(),
+    return preg_replace(self::$SERVER_REGEX, $this->GetServer(),
         $endpoint);
   }
 

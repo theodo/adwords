@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\Common\Lib;
+
 /**
  * An extension of the {@link SoapClient} class intended to prepare
  * the XML before making a request as well as perform any book-keeping on
@@ -30,12 +33,12 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
-require_once 'Google/Api/Ads/Common/Util/Logger.php';
-require_once 'Google/Api/Ads/Common/Util/MapUtils.php';
-require_once 'Google/Api/Ads/Common/Util/SoapRequestXmlFixer.php';
-require_once 'Google/Api/Ads/Common/Util/XmlUtils.php';
-require_once 'Google/Api/Ads/Common/Util/DeprecationUtils.php';
+use Google\Api\Ads\Common\Lib\AdsUser,
+    Google\Api\Ads\Common\Util\Logger,
+    Google\Api\Ads\Common\Util\MapUtils,
+    Google\Api\Ads\Common\Util\SoapRequestXmlFixer,
+    Google\Api\Ads\Common\Util\XmlUtils,
+    Google\Api\Ads\Common\Util\DeprecationUtils;
 
 /**
  * An extension of the {@link SoapClient} class intended to prepare
@@ -44,7 +47,7 @@ require_once 'Google/Api/Ads/Common/Util/DeprecationUtils.php';
  * @package GoogleApiAdsCommon
  * @subpackage Lib
  */
-abstract class AdsSoapClient extends SoapClient {
+abstract class AdsSoapClient extends \SoapClient {
   /**
    * The SoapClient options used to construct this class.
    * @var array
@@ -217,7 +220,7 @@ abstract class AdsSoapClient extends SoapClient {
       $this->ProcessResponse($this->lastRequest,
           $this->__getLastResponse(), $function_name);
       return $response;
-    } catch (SoapFault $e) {
+    } catch (\SoapFault $e) {
       $this->ProcessResponse($this->lastRequest,
           $this->__getLastResponse(), $function_name, $e);
       throw $e;
@@ -233,7 +236,7 @@ abstract class AdsSoapClient extends SoapClient {
    * @access private
    */
   private function ProcessResponse($request, $response, $method,
-      SoapFault $e = NULL) {
+      \SoapFault $e = NULL) {
     $this->lastSoapFault = $e;
     $this->lastRequestDom = NULL;
     $this->lastResponseDom = NULL;
@@ -243,14 +246,14 @@ abstract class AdsSoapClient extends SoapClient {
 
     try {
       $this->GetLastResponseDom();
-    } catch (DOMException $domException) {
+    } catch (\DOMException $domException) {
       trigger_error('Failed to load response into DOM: '
           . $domException->getMessage(), E_USER_NOTICE);
     }
 
     try {
       $this->GetLastRequestDom();
-    } catch (DOMException $domException) {
+    } catch (\DOMException $domException) {
       trigger_error('Failed to load request into DOM: '
           . $domException->getMessage(), E_USER_NOTICE);
     }
@@ -350,7 +353,7 @@ abstract class AdsSoapClient extends SoapClient {
       foreach ($responseTimeElements as $responseTimeElement) {
         return $responseTimeElement->nodeValue;
       }
-    } catch (DOMException $e) {
+    } catch (\DOMException $e) {
       trigger_error('Failed to load response into DOM: '
           . $e->getMessage(), E_USER_NOTICE);
       return "null";
@@ -368,7 +371,7 @@ abstract class AdsSoapClient extends SoapClient {
       foreach ($requestIdElements as $requestIdElement) {
         return $requestIdElement->nodeValue;
       }
-    } catch (DOMException $e) {
+    } catch (\DOMException $e) {
       trigger_error('Failed to load response into DOM: '
           . $e->getMessage(), E_USER_NOTICE);
       return 'null';
@@ -492,7 +495,7 @@ abstract class AdsSoapClient extends SoapClient {
   /**
    * Gets the DOMDocument representing the last response from this client.
    * @return DOMDocument the DOMDocument representing the last response
-   * @throws DOMException if the DOMDocument could not be loaded
+   * @throws \DOMException if the DOMDocument could not be loaded
    */
   public function GetLastResponseDom() {
     if (!isset($this->lastResponseDom)) {
@@ -505,7 +508,7 @@ abstract class AdsSoapClient extends SoapClient {
   /**
    * Get the DOMDocument representing the last request from this client.
    * @return DOMDocument the DOMDocument representing the last request
-   * @throws DOMException if the DOMDocument could not be loaded
+   * @throws \DOMException if the DOMDocument could not be loaded
    */
   public function GetLastRequestDom() {
     if (!isset($this->lastRequestDom)) {
@@ -578,7 +581,7 @@ abstract class AdsSoapClient extends SoapClient {
   public function Create($type, $params = NULL) {
     if (array_key_exists($type, $this->options['classmap'])) {
       $class = $this->options['classmap'][$type];
-      $reflectionClass = new ReflectionClass($class);
+      $reflectionClass = new \ReflectionClass($class);
       if (isset($params)) {
         if (MapUtils::IsMap($params)) {
           $params = MapUtils::MapToMethodParameters($params,

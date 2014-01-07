@@ -28,7 +28,7 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("DateRange", FALSE)) {
 /**
@@ -396,9 +396,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1711,11 +1711,11 @@ class StringLengthErrorReason {
 if (!class_exists("FeedServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of Feeds that meet the selector criteria.
- * 
+ *
  * @param selector Determines which Feeds to return. If empty all
  * Feeds are returned.
  * @return The list of Feeds.
@@ -1753,7 +1753,7 @@ class FeedServiceGet {
 
 if (!class_exists("FeedServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1791,11 +1791,11 @@ if (!class_exists("FeedServiceMutate", FALSE)) {
  * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Add, remove, and set Feeds.
- * 
+ *
  * @param operations The operations to apply.
  * @return The resulting Feeds.
  * @throws ApiException Indicates a problem with the request.
@@ -1832,7 +1832,7 @@ class FeedServiceMutate {
 
 if (!class_exists("FeedServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2968,7 +2968,7 @@ class FeedReturnValue extends ListReturnValue {
 
 if (!class_exists("NullStatsPage", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3148,11 +3148,11 @@ class FeedService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of Feeds that meet the selector criteria.
-   * 
+   *
    * @param selector Determines which Feeds to return. If empty all
    * Feeds are returned.
    * @return The list of Feeds.
@@ -3170,11 +3170,11 @@ class FeedService extends AdWordsSoapClient {
    * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Add, remove, and set Feeds.
-   * 
+   *
    * @param operations The operations to apply.
    * @return The resulting Feeds.
    * @throws ApiException Indicates a problem with the request.

@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\Common\Util;
+
 /**
  * A logger class which registers appenders (any writable handle location
  * which can be fopen'ed) with a unique name for that log

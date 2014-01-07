@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\Common\Util;
+
 /**
  * A collection of utility methods for working with XML.
  *
@@ -28,7 +31,7 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-require_once 'Google/Api/Ads/Common/Util/MapUtils.php';
+use Google\Api\Ads\Common\Util\MapUtils;
 
 /**
  * A collection of utility methods for working with XML.
@@ -44,8 +47,8 @@ class XmlUtils {
    * @throws DOMException if the DOM could not be loaded
    */
   public static function GetDomFromXml($xml) {
-    set_error_handler(array('XmlUtils', 'HandleXmlError'));
-    $dom = new DOMDocument();
+    set_error_handler(array('\Google\Api\Ads\Common\Util\XmlUtils', 'HandleXmlError'));
+    $dom = new \DOMDocument();
     $dom->loadXML($xml,
         LIBXML_DTDLOAD | LIBXML_DTDATTR | LIBXML_NOENT | LIBXML_XINCLUDE);
     restore_error_handler();
@@ -232,7 +235,7 @@ class XmlUtils {
   public static function HandleXmlError($errno, $errstr, $errfile, $errline) {
     if ($errno == E_WARNING
         && substr_count($errstr, 'DOMDocument::loadXML()') > 0) {
-      throw new DOMException($errstr);
+      throw new \DOMException($errstr);
     } else {
       return FALSE;
     }

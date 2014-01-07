@@ -1,4 +1,6 @@
 <?php
+
+namespace Google\Api\Ads\Common\Util;
 /**
  * A simple OAuth 2.0 handler.
  *
@@ -27,8 +29,6 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-require_once 'Google/Api/Ads/Common/Util/OAuth2Handler.php';
-require_once 'Google/Api/Ads/Common/Util/CurlUtils.php';
 
 /**
  * A simple OAuth 2.0 handler.

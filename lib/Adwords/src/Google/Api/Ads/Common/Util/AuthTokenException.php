@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\Common\Util;
+
 /**
  * Exception class for any AuthToken (ClientLogin) error.
  *
@@ -34,7 +37,7 @@
  * @package GoogleApiAdsCommon
  * @subpackage Util
  */
-class AuthTokenException extends Exception {
+class AuthTokenException extends \Exception {
 
   private $error;
   private $url;

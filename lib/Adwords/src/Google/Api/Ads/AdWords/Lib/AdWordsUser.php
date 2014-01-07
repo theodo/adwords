@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\AdWords\Lib;
+
 /**
  * User class for the AdWords API to create SOAP clients to the available API
  * services.
@@ -31,12 +34,13 @@
  * @author     Paul Matthews
  * @see        AdsUser
  */
-require_once dirname(__FILE__) . '/../../Common/Lib/AdsUser.php';
-require_once dirname(__FILE__) . '/../../Common/Util/ApiPropertiesUtils.php';
-require_once dirname(__FILE__) . '/../../Common/Util/AuthToken.php';
-require_once dirname(__FILE__) . '/../Util/ReportUtils.php';
-require_once 'AdWordsSoapClientFactory.php';
-require_once 'AdWordsConstants.php';
+
+use Google\Api\Ads\Common\Lib\AdsUser,
+    Google\Api\Ads\Common\Util\ApiPropertiesUtils,
+    Google\Api\Ads\Common\Util\AuthToken,
+    Google\Api\Ads\AdWords\Util\ReportUtils;
+use Google\Api\Ads\Common\Util\Logger;
+
 
 /**
  * User class for the AdWords API to create SOAP clients to the available API
@@ -47,7 +51,7 @@ require_once 'AdWordsConstants.php';
 class AdWordsUser extends AdsUser {
 
   const OAUTH2_SCOPE = 'https://adwords.google.com/api/adwords/';
-  const OAUTH2_HANDLER_CLASS = 'SimpleOAuth2Handler';
+  const OAUTH2_HANDLER_CLASS = 'Google\Api\Ads\Common\Util\SimpleOAuth2Handler';
 
   /**
    * The name of the SOAP header that represents the user agent making API

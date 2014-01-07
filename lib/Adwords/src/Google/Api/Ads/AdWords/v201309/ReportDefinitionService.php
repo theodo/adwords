@@ -28,7 +28,7 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("EnumValuePair", FALSE)) {
 /**
@@ -307,9 +307,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1148,11 +1148,11 @@ class StringLengthErrorReason {
 if (!class_exists("getReportFields", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns the available report fields for a given report type.
- * 
+ *
  * @param reportType The type of report.
  * @return The list of available report fields. Each
  * {@link ReportDefinitionField} encapsulates the field name, the
@@ -1193,7 +1193,7 @@ class getReportFields {
 
 if (!class_exists("getReportFieldsResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2325,11 +2325,11 @@ class ReportDefinitionService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns the available report fields for a given report type.
-   * 
+   *
    * @param reportType The type of report.
    * @return The list of available report fields. Each
    * {@link ReportDefinitionField} encapsulates the field name, the

@@ -28,7 +28,7 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("ProductConditionOperand", FALSE)) {
 /**
@@ -198,7 +198,7 @@ class SoapResponseHeader {
 if (!class_exists("WebpageCondition", FALSE)) {
 /**
  * Logical expression for targeting webpages of an advertiser's website.
- * 
+ *
  * <p>A condition is defined as {@code operand OP argument}
  * where {@code operand} is one of the values enumerated in
  * {@link WebpageConditionOperand}, and, based on this value,
@@ -353,9 +353,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -623,7 +623,7 @@ class AdxErrorReason {
 
 if (!class_exists("AgeRangeAgeRangeType", FALSE)) {
 /**
- * <span class="constraint Rejected">Used for return value only. An enumeration could not be processed, typically due to incompatibility with your WSDL version.</span>
+ * <span class="constraint Rejected">Used for return value only. An enumeration could not be processed, typically due to incompatibility with your WSDL version.<\span>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -867,7 +867,7 @@ class DistinctErrorReason {
 
 if (!class_exists("GenderGenderType", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -976,7 +976,7 @@ class KeywordMatchType {
 
 if (!class_exists("MobileDeviceDeviceType", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1437,7 +1437,7 @@ class WebpageConditionOperand {
 if (!class_exists("getAgeRangeCriterion", FALSE)) {
 /**
  * Returns a list of all age range criteria.
- * 
+ *
  * @return A list of age ranges.
  * @throws ApiException when there is at least one error with the request.
  * @package GoogleApiAdsAdWords
@@ -1466,7 +1466,7 @@ class getAgeRangeCriterion {
 
 if (!class_exists("getAgeRangeCriterionResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1501,7 +1501,7 @@ class getAgeRangeCriterionResponse {
 if (!class_exists("getCarrierCriterion", FALSE)) {
 /**
  * Returns a list of all carrier criteria.
- * 
+ *
  * @return A list of carriers.
  * @throws ApiException when there is at least one error with the request.
  * @package GoogleApiAdsAdWords
@@ -1530,7 +1530,7 @@ class getCarrierCriterion {
 
 if (!class_exists("getCarrierCriterionResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1565,7 +1565,7 @@ class getCarrierCriterionResponse {
 if (!class_exists("getGenderCriterion", FALSE)) {
 /**
  * Returns a list of all gender criteria.
- * 
+ *
  * @return A list of genders.
  * @throws ApiException when there is at least one error with the request.
  * @package GoogleApiAdsAdWords
@@ -1594,7 +1594,7 @@ class getGenderCriterion {
 
 if (!class_exists("getGenderCriterionResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1629,7 +1629,7 @@ class getGenderCriterionResponse {
 if (!class_exists("getLanguageCriterion", FALSE)) {
 /**
  * Returns a list of all language criteria.
- * 
+ *
  * @return A list of languages.
  * @throws ApiException when there is at least one error with the request.
  * @package GoogleApiAdsAdWords
@@ -1658,7 +1658,7 @@ class getLanguageCriterion {
 
 if (!class_exists("getLanguageCriterionResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1693,7 +1693,7 @@ class getLanguageCriterionResponse {
 if (!class_exists("getMobileDeviceCriterion", FALSE)) {
 /**
  * Returns a list of all mobile devices.
- * 
+ *
  * @return A list of mobile devices.
  * @throws ApiException when there is at least one error with the request.
  * <span class="constraint Beta">This is a beta feature.</span>
@@ -1723,7 +1723,7 @@ class getMobileDeviceCriterion {
 
 if (!class_exists("getMobileDeviceCriterionResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1758,7 +1758,7 @@ class getMobileDeviceCriterionResponse {
 if (!class_exists("getOperatingSystemVersionCriterion", FALSE)) {
 /**
  * Returns a list of all operating system version criteria.
- * 
+ *
  * @return A list of operating system versions.
  * @throws ApiException when there is at least one error with the request.
  * <span class="constraint Beta">This is a beta feature.</span>
@@ -1788,7 +1788,7 @@ class getOperatingSystemVersionCriterion {
 
 if (!class_exists("getOperatingSystemVersionCriterionResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1823,7 +1823,7 @@ class getOperatingSystemVersionCriterionResponse {
 if (!class_exists("getUserInterestCriterion", FALSE)) {
 /**
  * Returns a list of user interests.
- * 
+ *
  * @return A list of user interests.
  * @throws ApiException when there is at least one error with the request.
  * @package GoogleApiAdsAdWords
@@ -1852,7 +1852,7 @@ class getUserInterestCriterion {
 
 if (!class_exists("getUserInterestCriterionResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1887,7 +1887,7 @@ class getUserInterestCriterionResponse {
 if (!class_exists("getVerticalCriterion", FALSE)) {
 /**
  * Returns a list of content verticals.
- * 
+ *
  * @return A list of verticals.
  * @throws ApiException when there is at least one error with the request.
  * @package GoogleApiAdsAdWords
@@ -1916,7 +1916,7 @@ class getVerticalCriterion {
 
 if (!class_exists("getVerticalCriterionResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3829,7 +3829,7 @@ class ConstantDataService extends AdWordsSoapClient {
 
   /**
    * Returns a list of all age range criteria.
-   * 
+   *
    * @return A list of age ranges.
    * @throws ApiException when there is at least one error with the request.
    */
@@ -3842,7 +3842,7 @@ class ConstantDataService extends AdWordsSoapClient {
 
   /**
    * Returns a list of all carrier criteria.
-   * 
+   *
    * @return A list of carriers.
    * @throws ApiException when there is at least one error with the request.
    */
@@ -3855,7 +3855,7 @@ class ConstantDataService extends AdWordsSoapClient {
 
   /**
    * Returns a list of all gender criteria.
-   * 
+   *
    * @return A list of genders.
    * @throws ApiException when there is at least one error with the request.
    */
@@ -3868,7 +3868,7 @@ class ConstantDataService extends AdWordsSoapClient {
 
   /**
    * Returns a list of all language criteria.
-   * 
+   *
    * @return A list of languages.
    * @throws ApiException when there is at least one error with the request.
    */
@@ -3881,7 +3881,7 @@ class ConstantDataService extends AdWordsSoapClient {
 
   /**
    * Returns a list of all mobile devices.
-   * 
+   *
    * @return A list of mobile devices.
    * @throws ApiException when there is at least one error with the request.
    * <span class="constraint Beta">This is a beta feature.</span>
@@ -3895,7 +3895,7 @@ class ConstantDataService extends AdWordsSoapClient {
 
   /**
    * Returns a list of all operating system version criteria.
-   * 
+   *
    * @return A list of operating system versions.
    * @throws ApiException when there is at least one error with the request.
    * <span class="constraint Beta">This is a beta feature.</span>
@@ -3909,7 +3909,7 @@ class ConstantDataService extends AdWordsSoapClient {
 
   /**
    * Returns a list of user interests.
-   * 
+   *
    * @return A list of user interests.
    * @throws ApiException when there is at least one error with the request.
    */
@@ -3922,7 +3922,7 @@ class ConstantDataService extends AdWordsSoapClient {
 
   /**
    * Returns a list of content verticals.
-   * 
+   *
    * @return A list of verticals.
    * @throws ApiException when there is at least one error with the request.
    */

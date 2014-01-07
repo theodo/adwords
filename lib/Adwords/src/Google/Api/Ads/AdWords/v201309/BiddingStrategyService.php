@@ -28,7 +28,7 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("DateRange", FALSE)) {
 /**
@@ -405,9 +405,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1242,7 +1242,7 @@ class ConversionOptimizerBiddingSchemeBidType {
 
 if (!class_exists("ConversionOptimizerBiddingSchemePricingMode", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1594,7 +1594,7 @@ class Operator {
 
 if (!class_exists("PageOnePromotedBiddingSchemeStrategyGoal", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1947,11 +1947,11 @@ class StringLengthErrorReason {
 if (!class_exists("BiddingStrategyServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of bidding strategies that match the selector.
- * 
+ *
  * @return list of bidding strategies specified by the selector.
  * @throws com.google.ads.api.services.common.error.ApiException if problems
  * occurred while retrieving results.
@@ -1988,7 +1988,7 @@ class BiddingStrategyServiceGet {
 
 if (!class_exists("BiddingStrategyServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2025,11 +2025,11 @@ if (!class_exists("BiddingStrategyServiceMutate", FALSE)) {
  * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Applies the list of mutate operations.
- * 
+ *
  * @param operations the operations to apply
  * @return the modified list of BiddingStrategy
  * @throws ApiException
@@ -2066,7 +2066,7 @@ class BiddingStrategyServiceMutate {
 
 if (!class_exists("BiddingStrategyServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2375,15 +2375,15 @@ if (!class_exists("ConversionOptimizerBiddingScheme", FALSE)) {
 /**
  * Conversion optimizer bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.
- * 
+ *
  * <p class="warning">{@code pricingMode} currently defaults to {@code CLICKS} and
  * cannot be changed.</p>
- * 
+ *
  * <p>Note that campaigns must meet <a
  * href="//support.google.com/adwords/bin/answer.py?answer=2471188">specific
- * eligibility requirements</a> before they can use the <code>ConversionOptimizer</code>
+ * eligibility requirements</a> before they can use the <code>ConversionOptimizer<\code>
  * bidding strategy.
- * 
+ *
  * For more information on conversion optimizer, visit the
  * <a href="http://www.google.com/adwords/conversionoptimizer/index.html"
  * >Conversion Optimizer site</a>.
@@ -2510,7 +2510,7 @@ if (!class_exists("EnhancedCpcBiddingScheme", FALSE)) {
 /**
  * Enhanced CPC is a bidding strategy that raises your bids for clicks that seem more likely to
  * lead to a conversion and lowers them for clicks where they seem less likely.
- * 
+ *
  * This bidding scheme does not support criteria level bidding strategy overrides.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -3580,14 +3580,14 @@ if (!class_exists("TargetCpaBiddingScheme", FALSE)) {
 /**
  * Target Cpa bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.
- * 
+ *
  * This is similar to the <code>ConversionOptimizerBiddingScheme<code> but does not
  * support user-entered AdGroup-level target CPA bids, but rather a strategy-wide
  * average CPA target.
- * 
+ *
  * <p>Note that campaigns must meet <a
  * href="//support.google.com/adwords/bin/answer.py?answer=2471188">specific
- * eligibility requirements</a> before they can use the <code>TargetCpaBiddingScheme</code>
+ * eligibility requirements</a> before they can use the <code>TargetCpaBiddingScheme<\code>
  * bidding strategy.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -3626,7 +3626,7 @@ class TargetCpaBiddingScheme extends BiddingScheme {
 if (!class_exists("TargetSpendBiddingScheme", FALSE)) {
 /**
  * Target Spend bidding scheme, in which Google automatically places
- * bids for the user based on their daily/monthly budget or optional
+ * bids for the user based on their daily\monthly budget or optional
  * spend target.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -4072,11 +4072,11 @@ class BiddingStrategyService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of bidding strategies that match the selector.
-   * 
+   *
    * @return list of bidding strategies specified by the selector.
    * @throws com.google.ads.api.services.common.error.ApiException if problems
    * occurred while retrieving results.
@@ -4092,11 +4092,11 @@ class BiddingStrategyService extends AdWordsSoapClient {
    * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Applies the list of mutate operations.
-   * 
+   *
    * @param operations the operations to apply
    * @return the modified list of BiddingStrategy
    * @throws ApiException

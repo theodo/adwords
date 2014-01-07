@@ -28,7 +28,7 @@
  */
 
 /** Required classes. **/
-require_once "Google/Api/Ads/AdWords/Lib/AdWordsSoapClient.php";
+use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 
 if (!class_exists("Address", FALSE)) {
 /**
@@ -191,7 +191,7 @@ class GeoPoint {
 
 if (!class_exists("OAuthInfo", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -545,9 +545,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- * 
+ *
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.</p>
+ * element that may have caused the error.<\p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2142,11 +2142,11 @@ class StringLengthErrorReason {
 if (!class_exists("CampaignAdExtensionServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Returns a list of {@link CampaignAdExtension}s.
- * 
+ *
  * @param serviceSelector The selector specifying the {@link CampaignAdExtension}s to return.
  * @return The page containing the {@link CampaignAdExtension}s which meet the
  * criteria specified by the selector.
@@ -2184,7 +2184,7 @@ class CampaignAdExtensionServiceGet {
 
 if (!class_exists("CampaignAdExtensionServiceGetResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2222,9 +2222,9 @@ if (!class_exists("CampaignAdExtensionServiceMutate", FALSE)) {
  * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * 
- * 
- * 
+ *
+ *
+ *
  * Applies the list of mutate operations.
  * @param operations The operations to apply. The same {@link CampaignAdExtension}
  * cannot be specified in more than one operation.
@@ -2262,7 +2262,7 @@ class CampaignAdExtensionServiceMutate {
 
 if (!class_exists("CampaignAdExtensionServiceMutateResponse", FALSE)) {
 /**
- * 
+ *
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2803,9 +2803,9 @@ if (!class_exists("InAppLinkExtension", FALSE)) {
  * <p>This extension is useful for advertisers who wish to provide users with a
  * link that points to the advertiser's mobile application in addition to their
  * website.
- * 
+ *
  * <p>It is also known as Mobile App Extension.
- * 
+ *
  * <p>The API allows one InAppLinkExtension per {@code AppStore} per campaign.
  * Only the extension for a given {@code AppStore} will render on the device
  * relevant to that {@code AppStore} (e.g. iPhones for {@code AppStore.ITUNES}
@@ -2910,7 +2910,7 @@ class InternalApiError extends ApiError {
 if (!class_exists("MobileExtension", FALSE)) {
 /**
  * Represents a phone extension.
- * 
+ *
  * <p>This type of ad extension attaches a phone number
  * to a text ad, which lets customers call the advertiser directly from the ad.
  * Phone extensions will appear as clickable phone numbers beneath the main text ad,
@@ -4225,11 +4225,11 @@ class CampaignAdExtensionService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Returns a list of {@link CampaignAdExtension}s.
-   * 
+   *
    * @param serviceSelector The selector specifying the {@link CampaignAdExtension}s to return.
    * @return The page containing the {@link CampaignAdExtension}s which meet the
    * criteria specified by the selector.
@@ -4247,9 +4247,9 @@ class CampaignAdExtensionService extends AdWordsSoapClient {
    * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   * 
-   * 
-   * 
+   *
+   *
+   *
    * Applies the list of mutate operations.
    * @param operations The operations to apply. The same {@link CampaignAdExtension}
    * cannot be specified in more than one operation.

@@ -1,4 +1,7 @@
 <?php
+
+namespace Google\Api\Ads\AdWords\Lib;
+
 /**
  * Useful constants for the AdWords API.
  *
