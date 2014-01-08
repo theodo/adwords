@@ -294,9 +294,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1366,14 +1366,14 @@ if (!class_exists("OfflineConversionFeedServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Reports an offline conversion for each entry in {@code operations}.
  * <p>
  * This bulk operation does not have any transactional guarantees. Some operations can succeed
  * while others fail.
- *
+ * 
  * @param operations A list of offline conversion feed operations.
  * @return The list of offline conversion feed results (in the same order as the operations).
  * @throws {@link ApiException} if problems occurred while applying offline conversions.
@@ -1410,7 +1410,7 @@ class OfflineConversionFeedServiceMutate {
 
 if (!class_exists("OfflineConversionFeedServiceMutateResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2887,7 +2887,7 @@ class OfflineConversionFeedService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/OfflineConversionFeedService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/OfflineConversionFeedService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2904,14 +2904,14 @@ class OfflineConversionFeedService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Reports an offline conversion for each entry in {@code operations}.
    * <p>
    * This bulk operation does not have any transactional guarantees. Some operations can succeed
    * while others fail.
-   *
+   * 
    * @param operations A list of offline conversion feed operations.
    * @return The list of offline conversion feed results (in the same order as the operations).
    * @throws {@link ApiException} if problems occurred while applying offline conversions.

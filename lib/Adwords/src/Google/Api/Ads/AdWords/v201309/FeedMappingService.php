@@ -33,7 +33,7 @@ use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;
 if (!class_exists("AttributeFieldMapping", FALSE)) {
 /**
  * Represents a mapping between a feed attribute and a placeholder field.
- *
+ * 
  * <p>For a list of feed placeholders, see
  * <a href="/adwords/api/docs/appendix/placeholders">
  * https://developers.google.com/adwords/api/docs/appendix/placeholders
@@ -125,7 +125,7 @@ if (!class_exists("FeedMapping", FALSE)) {
  * ads serving system which parts of the feed item should be used when
  * populating a placeholder. Without this mapping the placeholder cannot be
  * populated and the extension can not be displayed.
- *
+ * 
  * <p>For a list of feed placeholders, see
  * <a href="/adwords/api/docs/appendix/placeholders">
  * https://developers.google.com/adwords/api/docs/appendix/placeholders
@@ -669,9 +669,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1599,11 +1599,11 @@ class StringLengthErrorReason {
 if (!class_exists("FeedMappingServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns a list of FeedMappings that meet the selector criteria.
- *
+ * 
  * @param selector Determines which FeedMappings to return. If empty all
  * FeedMappings are returned.
  * @return The list of FeedMappings.
@@ -1641,7 +1641,7 @@ class FeedMappingServiceGet {
 
 if (!class_exists("FeedMappingServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1679,11 +1679,11 @@ if (!class_exists("FeedMappingServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Add and remove FeedMappings.
- *
+ * 
  * @param operations The operations to apply.
  * @return The resulting FeedMappings.
  * @throws ApiException indicates a problem with the request.
@@ -1720,7 +1720,7 @@ class FeedMappingServiceMutate {
 
 if (!class_exists("FeedMappingServiceMutateResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2220,7 +2220,7 @@ class NotWhitelistedError extends ApiError {
 
 if (!class_exists("NullStatsPage", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2908,7 +2908,7 @@ class FeedMappingService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/FeedMappingService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/FeedMappingService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2922,11 +2922,11 @@ class FeedMappingService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns a list of FeedMappings that meet the selector criteria.
-   *
+   * 
    * @param selector Determines which FeedMappings to return. If empty all
    * FeedMappings are returned.
    * @return The list of FeedMappings.
@@ -2944,11 +2944,11 @@ class FeedMappingService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Add and remove FeedMappings.
-   *
+   * 
    * @param operations The operations to apply.
    * @return The resulting FeedMappings.
    * @throws ApiException indicates a problem with the request.

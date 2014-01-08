@@ -34,12 +34,12 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
- *
- *
- *
+ * element that may have caused the error.</p>
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -128,9 +128,9 @@ class ApiError {
 if (!class_exists("ApplicationException", FALSE)) {
 /**
  * Base class for exceptions.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -205,9 +205,9 @@ class ApplicationException {
 if (!class_exists("AuthenticationError", FALSE)) {
 /**
  * Errors returned when Authentication failed.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -248,9 +248,9 @@ class AuthenticationError extends ApiError {
 if (!class_exists("AuthorizationError", FALSE)) {
 /**
  * Errors encountered when trying to authorize a user.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -292,9 +292,9 @@ if (!class_exists("BidLandscapeLandscapePoint", FALSE)) {
 /**
  * A set of estimates for a criterion's performance for a specific bid
  * amount.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -365,9 +365,9 @@ class BidLandscapeLandscapePoint {
 if (!class_exists("BiddingError", FALSE)) {
 /**
  * Represents bidding errors.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -408,9 +408,9 @@ class BiddingError extends ApiError {
 if (!class_exists("BudgetError", FALSE)) {
 /**
  * A list of all the error codes being used by the common budget domain package.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -451,9 +451,9 @@ class BudgetError extends ApiError {
 if (!class_exists("ClientTermsError", FALSE)) {
 /**
  * Error due to user not accepting the AdWords terms of service.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -495,9 +495,9 @@ if (!class_exists("CollectionSizeError", FALSE)) {
 /**
  * Errors associated with the size of the given collection being
  * out of bounds.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -531,9 +531,9 @@ class CollectionSizeError extends ApiError {
 if (!class_exists("ComparableValue", FALSE)) {
 /**
  * Comparable types for constructing ranges with.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -602,9 +602,9 @@ if (!class_exists("Criterion", FALSE)) {
 /**
  * Represents a criterion (such as a keyword, placement, or vertical).
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -686,9 +686,9 @@ class Criterion {
 if (!class_exists("CriterionError", FALSE)) {
 /**
  * Error class used for reporting criteria related errors.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -729,9 +729,9 @@ class CriterionError extends ApiError {
 if (!class_exists("CriterionParameter", FALSE)) {
 /**
  * Base type of criterion parameters.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -799,9 +799,9 @@ class CriterionParameter {
 if (!class_exists("DatabaseError", FALSE)) {
 /**
  * Errors that are thrown due to a database access problem.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -842,9 +842,9 @@ class DatabaseError extends ApiError {
 if (!class_exists("DateError", FALSE)) {
 /**
  * Errors associated with invalid dates and date ranges.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -885,9 +885,9 @@ class DateError extends ApiError {
 if (!class_exists("DistinctError", FALSE)) {
 /**
  * Errors related to distinct ids or content.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -929,9 +929,9 @@ if (!class_exists("EntityCountLimitExceeded", FALSE)) {
 /**
  * Signals that an entity count limit was exceeded for some level.
  * For example, too many criteria for a campaign.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1001,9 +1001,9 @@ if (!class_exists("EntityNotFound", FALSE)) {
 /**
  * An id did not correspond to an entity, or it referred to an entity which does not belong to the
  * customer.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1044,9 +1044,9 @@ class EntityNotFound extends ApiError {
 if (!class_exists("IdError", FALSE)) {
 /**
  * Errors associated with the ids.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1089,9 +1089,9 @@ if (!class_exists("InternalApiError", FALSE)) {
  * Indicates that a server-side error has occured. {@code InternalApiError}s
  * are generally not the result of an invalid request or message sent by the
  * client.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1133,9 +1133,9 @@ if (!class_exists("Keyword", FALSE)) {
 /**
  * Represents a keyword.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1184,9 +1184,9 @@ if (!class_exists("Language", FALSE)) {
  * Represents a Language criterion.
  * <p>A criterion of this type can only be created using an ID. A criterion of this type is only targetable.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1235,9 +1235,9 @@ if (!class_exists("Location", FALSE)) {
  * Represents Location criterion.
  * <p>A criterion of this type can only be created using an ID. A criterion of this type can be either targeted or excluded.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1302,9 +1302,9 @@ if (!class_exists("MobileAppCategory", FALSE)) {
  * available mobile app categories</a>.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
  * <span class="constraint Beta">This is a beta feature.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1353,9 +1353,9 @@ if (!class_exists("MobileApplication", FALSE)) {
  * Represents the mobile application to be targeted.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
  * <span class="constraint Beta">This is a beta feature.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1402,9 +1402,9 @@ class MobileApplication extends Criterion {
 if (!class_exists("Money", FALSE)) {
 /**
  * Represents a money amount.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1442,9 +1442,9 @@ class Money extends ComparableValue {
 if (!class_exists("NetworkSetting", FALSE)) {
 /**
  * Network settings for a Campaign.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1501,9 +1501,9 @@ class NetworkSetting {
 if (!class_exists("NotEmptyError", FALSE)) {
 /**
  * Errors corresponding with violation of a NOT EMPTY check.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1544,9 +1544,9 @@ class NotEmptyError extends ApiError {
 if (!class_exists("NotWhitelistedError", FALSE)) {
 /**
  * Indicates that the customer is not whitelisted for accessing the API.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1587,9 +1587,9 @@ class NotWhitelistedError extends ApiError {
 if (!class_exists("NullError", FALSE)) {
 /**
  * Errors associated with violation of a NOT NULL check.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1630,9 +1630,9 @@ class NullError extends ApiError {
 if (!class_exists("NumberValue", FALSE)) {
 /**
  * Number value types for constructing number valued ranges.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1663,9 +1663,9 @@ class NumberValue extends ComparableValue {
 if (!class_exists("OperationAccessDenied", FALSE)) {
 /**
  * Operation not permitted due to the invoked service's access policy.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1708,9 +1708,9 @@ if (!class_exists("Paging", FALSE)) {
  * Specifies the page of results to return in the response. A page is specified
  * by the result position to start at and the maximum number of results to
  * return.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1755,9 +1755,9 @@ if (!class_exists("Placement", FALSE)) {
  * A placement used for modifying bids for sites when targeting the content
  * network.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1799,9 +1799,9 @@ if (!class_exists("Platform", FALSE)) {
  * Represents Platform criterion.
  * <p>A criterion of this type can only be created using an ID. A criterion of this type is only targetable.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1841,20 +1841,20 @@ class Platform extends Criterion {
 if (!class_exists("PolicyViolationError", FALSE)) {
 /**
  * Represents violations of a single policy by some text in a field.
- *
+ * 
  * Violations of a single policy by the same string in multiple places
  * within a field is reported in one instance of this class and only one
  * exemption needs to be filed.
  * Violations of a single policy by two different strings is reported
  * as two separate instances of this class.
- *
+ * 
  * e.g. If 'ACME' violates 'capitalization' and occurs twice in a text ad it
  * would be represented by one instance. If the ad also contains 'INC' which
  * also violates 'capitalization' it would be represented in a separate
  * instance.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1930,9 +1930,9 @@ class PolicyViolationError extends ApiError {
 if (!class_exists("PolicyViolationErrorPart", FALSE)) {
 /**
  * Points to a substring within an ad field or criterion.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -1976,9 +1976,9 @@ if (!class_exists("PolicyViolationKey", FALSE)) {
 /**
  * Key of the violation. The key is used for referring to a violation when
  * filing an exemption request.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2025,9 +2025,9 @@ if (!class_exists("Product", FALSE)) {
  * determine the products in a Merchant Center account to be used with the
  * ProductAds in the AdGroup. This criteria is available only to some advertisers.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2075,9 +2075,9 @@ if (!class_exists("ProductCondition", FALSE)) {
 /**
  * Conditions to filter the products defined in product feed for targeting.
  * The condition is defined as operand=argument.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2120,9 +2120,9 @@ class ProductCondition {
 if (!class_exists("ProductConditionOperand", FALSE)) {
 /**
  * Attribute for the product condition.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2158,9 +2158,9 @@ class ProductConditionOperand {
 if (!class_exists("QuotaCheckError", FALSE)) {
 /**
  * Encapsulates the errors thrown during developer quota checks.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2201,9 +2201,9 @@ class QuotaCheckError extends ApiError {
 if (!class_exists("RangeError", FALSE)) {
 /**
  * A list of all errors associated with the Range constraint.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2244,9 +2244,9 @@ class RangeError extends ApiError {
 if (!class_exists("RateExceededError", FALSE)) {
 /**
  * Signals that a call failed because a measured rate exceeded.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2308,9 +2308,9 @@ class RateExceededError extends ApiError {
 if (!class_exists("ReadOnlyError", FALSE)) {
 /**
  * Errors from attempting to write to read-only fields.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2351,9 +2351,9 @@ class ReadOnlyError extends ApiError {
 if (!class_exists("RegionCodeError", FALSE)) {
 /**
  * A list of all errors associated with the @RegionCode constraints.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2395,9 +2395,9 @@ if (!class_exists("RequestError", FALSE)) {
 /**
  * Encapsulates the generic errors thrown when there's an error with user
  * request.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2438,9 +2438,9 @@ class RequestError extends ApiError {
 if (!class_exists("RequiredError", FALSE)) {
 /**
  * Errors due to missing required field.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2481,9 +2481,9 @@ class RequiredError extends ApiError {
 if (!class_exists("SizeLimitError", FALSE)) {
 /**
  * Indicates that the number of entries in the request or response exceeds the system limit.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2524,9 +2524,9 @@ class SizeLimitError extends ApiError {
 if (!class_exists("SoapRequestHeader", FALSE)) {
 /**
  * Defines the required and optional elements within the header of a SOAP request.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2597,9 +2597,9 @@ class SoapRequestHeader {
 if (!class_exists("SoapResponseHeader", FALSE)) {
 /**
  * Defines the elements within the header of a SOAP response.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2663,9 +2663,9 @@ class SoapResponseHeader {
 if (!class_exists("StatsQueryError", FALSE)) {
 /**
  * Represents possible error codes when querying for stats.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2707,9 +2707,9 @@ if (!class_exists("StringLengthError", FALSE)) {
 /**
  * Errors associated with the length of the given string being
  * out of bounds.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2750,9 +2750,9 @@ class StringLengthError extends ApiError {
 if (!class_exists("DataEntry", FALSE)) {
 /**
  * The base class of all return types of the table service.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2820,9 +2820,9 @@ class DataEntry {
 if (!class_exists("TargetError", FALSE)) {
 /**
  * A list of all the error codes being used by the common targeting package.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2866,9 +2866,9 @@ if (!class_exists("CriterionUserInterest", FALSE)) {
  * Targeting UserInterest is currently in a limited beta.  If you'd like access
  * please speak with your account representative.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2916,9 +2916,9 @@ if (!class_exists("CriterionUserList", FALSE)) {
 /**
  * UserList - represents a user list that is defined by the advertiser to be targeted.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -2977,9 +2977,9 @@ if (!class_exists("Vertical", FALSE)) {
  * <a href="/adwords/api/docs/appendix/verticals">View the complete list
  * of available vertical categories.</a>
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3035,9 +3035,9 @@ if (!class_exists("Webpage", FALSE)) {
  * Criterion for targeting webpages of an advertiser's website. The
  * website domain name is specified at the campaign level.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3091,14 +3091,14 @@ class Webpage extends Criterion {
 if (!class_exists("WebpageCondition", FALSE)) {
 /**
  * Logical expression for targeting webpages of an advertiser's website.
- *
+ * 
  * <p>A condition is defined as {@code operand OP argument}
  * where {@code operand} is one of the values enumerated in
  * {@link WebpageConditionOperand}, and, based on this value,
  * {@code OP} is either of {@code EQUALS} or {@code CONTAINS}.</p>
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3142,9 +3142,9 @@ if (!class_exists("WebpageParameter", FALSE)) {
 /**
  * Parameter of Webpage criterion, expressed as a list of conditions, or
  * logical expressions, for targeting webpages of an advertiser's website.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3189,9 +3189,9 @@ class WebpageParameter extends CriterionParameter {
 if (!class_exists("AdGroupBidLandscapeType", FALSE)) {
 /**
  * Used to specify the type of {@code AdGroupLandscape}
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3220,9 +3220,9 @@ class AdGroupBidLandscapeType {
 if (!class_exists("AdGroupCriterionErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3251,9 +3251,9 @@ class AdGroupCriterionErrorReason {
 if (!class_exists("AdGroupCriterionLimitExceededCriteriaLimitType", FALSE)) {
 /**
  * The entity type that exceeded the limit.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3282,9 +3282,9 @@ class AdGroupCriterionLimitExceededCriteriaLimitType {
 if (!class_exists("AdxErrorReason", FALSE)) {
 /**
  * The reasons for the AdX error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3313,9 +3313,9 @@ class AdxErrorReason {
 if (!class_exists("AuthenticationErrorReason", FALSE)) {
 /**
  * The single reason for the authentication failure.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3344,9 +3344,9 @@ class AuthenticationErrorReason {
 if (!class_exists("AuthorizationErrorReason", FALSE)) {
 /**
  * The reasons for the database error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3375,9 +3375,9 @@ class AuthorizationErrorReason {
 if (!class_exists("BiddingErrorReason", FALSE)) {
 /**
  * Reason for bidding error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3406,9 +3406,9 @@ class BiddingErrorReason {
 if (!class_exists("BudgetErrorReason", FALSE)) {
 /**
  * The reasons for the budget error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3438,9 +3438,9 @@ if (!class_exists("ClientTermsErrorReason", FALSE)) {
 /**
  * Enums for the various reasons an error can be thrown as a result of
  * ClientTerms violation.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3469,9 +3469,9 @@ class ClientTermsErrorReason {
 if (!class_exists("CriterionType", FALSE)) {
 /**
  * The types of criteria.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3500,9 +3500,9 @@ class CriterionType {
 if (!class_exists("CriterionErrorReason", FALSE)) {
 /**
  * Concrete type of criterion is required for ADD and SET operations.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3531,9 +3531,9 @@ class CriterionErrorReason {
 if (!class_exists("DatabaseErrorReason", FALSE)) {
 /**
  * The reasons for the database error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3562,9 +3562,9 @@ class DatabaseErrorReason {
 if (!class_exists("DateErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3593,9 +3593,9 @@ class DateErrorReason {
 if (!class_exists("DistinctErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3624,9 +3624,9 @@ class DistinctErrorReason {
 if (!class_exists("EntityCountLimitExceededReason", FALSE)) {
 /**
  * Limits at various levels of the account.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3656,9 +3656,9 @@ if (!class_exists("EntityNotFoundReason", FALSE)) {
 /**
  * The specified id refered to an entity which either doesn't exist or is not accessible to the
  * customer. e.g. campaign belongs to another customer.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3687,9 +3687,9 @@ class EntityNotFoundReason {
 if (!class_exists("IdErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3718,9 +3718,9 @@ class IdErrorReason {
 if (!class_exists("InternalApiErrorReason", FALSE)) {
 /**
  * The single reason for the internal API error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3750,9 +3750,9 @@ if (!class_exists("KeywordMatchType", FALSE)) {
 /**
  * Match type of a keyword. i.e. the way we match a keyword string with
  * search queries.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3781,9 +3781,9 @@ class KeywordMatchType {
 if (!class_exists("LocationTargetingStatus", FALSE)) {
 /**
  * Enum that represents the different Targeting Status values for a Location criterion.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3812,9 +3812,9 @@ class LocationTargetingStatus {
 if (!class_exists("NotEmptyErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3843,9 +3843,9 @@ class NotEmptyErrorReason {
 if (!class_exists("NotWhitelistedErrorReason", FALSE)) {
 /**
  * The single reason for the whitelist error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3874,9 +3874,9 @@ class NotWhitelistedErrorReason {
 if (!class_exists("NullErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3905,9 +3905,9 @@ class NullErrorReason {
 if (!class_exists("OperationAccessDeniedReason", FALSE)) {
 /**
  * The reasons for the operation access error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3937,9 +3937,9 @@ if (!class_exists("QuotaCheckErrorReason", FALSE)) {
 /**
  * Enums for all the reasons an error can be thrown to the user during
  * billing quota checks.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3968,9 +3968,9 @@ class QuotaCheckErrorReason {
 if (!class_exists("RangeErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -3999,9 +3999,9 @@ class RangeErrorReason {
 if (!class_exists("RateExceededErrorReason", FALSE)) {
 /**
  * The reason for the rate exceeded error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4030,9 +4030,9 @@ class RateExceededErrorReason {
 if (!class_exists("ReadOnlyErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4061,9 +4061,9 @@ class ReadOnlyErrorReason {
 if (!class_exists("RegionCodeErrorReason", FALSE)) {
 /**
  * The reasons for the validation error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4092,9 +4092,9 @@ class RegionCodeErrorReason {
 if (!class_exists("RequestErrorReason", FALSE)) {
 /**
  * Error reason is unknown.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4123,9 +4123,9 @@ class RequestErrorReason {
 if (!class_exists("RequiredErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4154,9 +4154,9 @@ class RequiredErrorReason {
 if (!class_exists("SizeLimitErrorReason", FALSE)) {
 /**
  * The reasons for Ad Scheduling errors.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4185,9 +4185,9 @@ class SizeLimitErrorReason {
 if (!class_exists("StatsQueryErrorReason", FALSE)) {
 /**
  * The reasons for errors when querying for stats.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4216,9 +4216,9 @@ class StatsQueryErrorReason {
 if (!class_exists("StringLengthErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4247,9 +4247,9 @@ class StringLengthErrorReason {
 if (!class_exists("TargetErrorReason", FALSE)) {
 /**
  * The reasons for the target error.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4278,9 +4278,9 @@ class TargetErrorReason {
 if (!class_exists("CriterionUserListMembershipStatus", FALSE)) {
 /**
  * Membership status of the user list.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -4309,9 +4309,9 @@ class CriterionUserListMembershipStatus {
 if (!class_exists("WebpageConditionOperand", FALSE)) {
 /**
  * Operand value of {@link WebpageCondition}.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -5659,7 +5659,7 @@ if (!class_exists("SearchParameter", FALSE)) {
  * {@link com.google.ads.api.services.targetingideas.TargetingIdeaSelector}
  * to specify how the user wants to filter the set of all possible
  * {@link com.google.ads.api.services.targetingideas.TargetingIdea}s.
- *
+ * 
  * There is a {@link SearchParameter} for all types of inputs.
  * {@link SearchParameter}s can conceptually be broken down into two types.
  * <ul>
@@ -5672,7 +5672,7 @@ if (!class_exists("SearchParameter", FALSE)) {
  * on {@link com.google.ads.api.services.targetingideas.attributes.Attribute}
  * related information (eg. {@link CompetitionSearchParameter}, etc.).</li>
  * </ul><p>
- *
+ * 
  * A request should only contain one instance of each {@link SearchParameter}
  * <p>One or more of the following {@link SearchParameter}s are required:<br/>
  * <ul><li>{@link CategoryProductsAndServicesSearchParameter}</li>
@@ -6651,21 +6651,21 @@ class TrafficEstimatorErrorReason {
 if (!class_exists("TargetingIdeaServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns a page of ideas that match the query described by the specified
  * {@link TargetingIdeaSelector}.
- *
+ * 
  * <p>The selector must specify a {@code paging} value, with {@code numberResults} set to 800 or
  * less.  Large result sets must be composed through multiple calls to this method, advancing the
  * paging {@code startIndex} value by {@code numberResults} with each call.
- *
+ * 
  * <p>Only a relatively small total number of results will be available through this method.
  * Much larger result sets may be available using
  * {@link #getBulkKeywordIdeas(TargetingIdeaSelector)} at the price of reduced flexibility in
  * selector options.
- *
+ * 
  * @param selector Query describing the types of results to return when
  * finding matches (similar keyword ideas/placement ideas).
  * @return A {@link TargetingIdeaPage} of results, that is a subset of the
@@ -6705,7 +6705,7 @@ class TargetingIdeaServiceGet {
 
 if (!class_exists("TargetingIdeaServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -6740,16 +6740,16 @@ class TargetingIdeaServiceGetResponse {
 if (!class_exists("getBulkKeywordIdeas", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns a page of ideas that match the query described by the specified
  * {@link TargetingIdeaSelector}.  This method is specialized for returning
  * bulk keyword ideas, and thus the selector must be set for
  * {@link com.google.ads.api.services.targetingideas.attributes.RequestType#IDEAS} and
  * {@link com.google.ads.api.services.common.optimization.attributes.IdeaType#KEYWORD}.
  * A limited, fixed set of attributes will be returned.
- *
+ * 
  * <p>A single-valued
  * {@link com.google.ads.api.services.targetingideas.search.RelatedToUrlSearchParameter}
  * must be supplied.  Single-valued
@@ -6757,17 +6757,17 @@ if (!class_exists("getBulkKeywordIdeas", FALSE)) {
  * {@link com.google.ads.api.services.targetingideas.search.LocationSearchParameter} are
  * both optional.  Other search parameters compatible with a keyword query may also be
  * supplied.
- *
+ * 
  * <p>The selector must specify a {@code paging} value, with {@code numberResults} set to 800
  * or less. If a URL based search is performed it will return up to 100 keywords when the site is
  * not owned, or up to 800 if it is. Number of keywords returned on a keyword based search is up
  * to 800. Large result sets must be composed through multiple calls to this method, advancing the
  * paging {@code startIndex} value by {@code numberResults} with each call.
- *
+ * 
  * <p>This method can make many more results available than {@link #get(TargetingIdeaSelector)},
  * but allows less control over the query. For fine-tuned queries that do not need large numbers
  * of results, prefer {@link #get(TargetingIdeaSelector)}.
- *
+ * 
  * @param selector Query describing the bulk keyword ideas to return.
  * @return A {@link TargetingIdeaPage} of results, that is a subset of the
  * list of possible ideas meeting the criteria of the
@@ -6806,7 +6806,7 @@ class getBulkKeywordIdeas {
 
 if (!class_exists("getBulkKeywordIdeasResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -6841,9 +6841,9 @@ class getBulkKeywordIdeasResponse {
 if (!class_exists("AdGroupCriterionError", FALSE)) {
 /**
  * Base error class for Ad Group Criterion Service.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -6884,9 +6884,9 @@ class AdGroupCriterionError extends ApiError {
 if (!class_exists("AdGroupCriterionLimitExceeded", FALSE)) {
 /**
  * Signals that too many criteria were added to some ad group.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -6932,9 +6932,9 @@ class AdGroupCriterionLimitExceeded extends EntityCountLimitExceeded {
 if (!class_exists("AdxError", FALSE)) {
 /**
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -6975,9 +6975,9 @@ class AdxError extends ApiError {
 if (!class_exists("ApiException", FALSE)) {
 /**
  * Exception class for holding a list of service errors.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -7016,9 +7016,9 @@ class ApiException extends ApplicationException {
 if (!class_exists("BidLandscape", FALSE)) {
 /**
  * Represents data about a bid landscape for an ad group or criterion.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -7085,9 +7085,9 @@ if (!class_exists("CriterionBidLandscape", FALSE)) {
 /**
  * The bid landscape for a criterion.  A bid landscape estimates how a
  * a criterion will perform based on different bid amounts.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -7130,9 +7130,9 @@ class CriterionBidLandscape extends BidLandscape {
 if (!class_exists("CriterionPolicyError", FALSE)) {
 /**
  * Contains the policy violations for a single BiddableAdGroupCriterion.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -7172,9 +7172,9 @@ class CriterionPolicyError extends PolicyViolationError {
 if (!class_exists("DoubleValue", FALSE)) {
 /**
  * Number value type for constructing double valued ranges.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -7212,9 +7212,9 @@ class DoubleValue extends NumberValue {
 if (!class_exists("LongValue", FALSE)) {
 /**
  * Number value type for constructing long valued ranges.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -7445,12 +7445,12 @@ if (!class_exists("ExcludedKeywordSearchParameter", FALSE)) {
 /**
  * A {@link SearchParameter} for {@code KEYWORD} {@link IdeaType}s that
  * specifies {@link Keyword}s that should be excluded from the results.<p>
- *
+ * 
  * The {@link KeywordMatchType} associated with these keywords is used to
  * provide various filtering strategies. For example, the excluded keyword
  * <b>"brand x player"</b> will exclude ideas from the resulting ideas as
  * described by the table below.
- *
+ * 
  * <table border="1">
  * <tr style="font-weight: bold;">
  * <th>Idea</th>
@@ -7524,10 +7524,10 @@ if (!class_exists("IdeaTextFilterSearchParameter", FALSE)) {
  * specifies a collection of strings by which the results should be
  * constrained. This guarantees that each idea in the result will match
  * at least one of the {@code included} values.
- *
+ * 
  * For this {@link SearchParameter}, excluded items will always take
  * priority over included ones.
- *
+ * 
  * This can handle a maximum of 200 (included + excluded) elements.
  * <p>This element is supported by following {@link IdeaType}s: KEYWORD.
  * <p>This element is supported by following {@link RequestType}s: IDEAS, STATS.
@@ -7575,7 +7575,7 @@ if (!class_exists("IncludeAdultContentSearchParameter", FALSE)) {
 /**
  * {@link SearchParameter} that specifies whether adult content should be
  * returned.<p>
- *
+ * 
  * Presence of this {@link SearchParameter} will allow adult keywords
  * to be included in the results.
  * <p>This element is supported by following {@link IdeaType}s: KEYWORD.
@@ -7612,7 +7612,7 @@ if (!class_exists("LanguageSearchParameter", FALSE)) {
  * {@link IdeaType}s used to indicate multiple language being targeted. This can
  * be used, for example, to search for {@code KEYWORD} {@link IdeaType}s that
  * are best for Japanese language.
- *
+ * 
  * <p>The service allows at most one language to be targeted for KEYWORD requests and 10 languages
  * for PLACEMENT requests.
  * <p>This search parameter can be used in bulk keyword requests through the {@link com.google.ads.api.services.targetingideas.TargetingIdeaService#getBulkKeywordIdeas(TargetingIdeaSelector)} method. It must be single-valued when used in a call to that method.
@@ -7657,11 +7657,11 @@ if (!class_exists("LocationSearchParameter", FALSE)) {
  * {@link IdeaType}s used to indicate the locations being targeted. This can
  * be used, for example, to search for {@code KEYWORD} {@link IdeaType}s that
  * are best for Japan and Los Angeles.
- *
+ * 
  * <p>This parameter replaces the {@code CountryTargetSearchParameter}.
- *
+ * 
  * <p>Warning: Not all back-ends support sub-country precision.
- *
+ * 
  * <p>The service allows up to 10 locations to be targeted for KEYWORD requests and 50 locations
  * for PLACEMENT requests.
  * <p>This search parameter can be used in bulk keyword requests through the {@link com.google.ads.api.services.targetingideas.TargetingIdeaService#getBulkKeywordIdeas(TargetingIdeaSelector)} method. It must be single-valued when used in a call to that method.
@@ -7876,9 +7876,9 @@ class RelatedToUrlSearchParameter extends SearchParameter {
 if (!class_exists("AdGroupBidLandscape", FALSE)) {
 /**
  * Represents data about a bidlandscape for an adgroup.
- *
- *
- *
+ * 
+ * 
+ * 
  * Represents data about a bidlandscape for an adgroup.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -8135,7 +8135,7 @@ class TargetingIdeaService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/o/v201309/TargetingIdeaService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/o/v201309/TargetingIdeaService";
 
   /**
    * Constructor using wsdl location and options array
@@ -8149,21 +8149,21 @@ class TargetingIdeaService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns a page of ideas that match the query described by the specified
    * {@link TargetingIdeaSelector}.
-   *
+   * 
    * <p>The selector must specify a {@code paging} value, with {@code numberResults} set to 800 or
    * less.  Large result sets must be composed through multiple calls to this method, advancing the
    * paging {@code startIndex} value by {@code numberResults} with each call.
-   *
+   * 
    * <p>Only a relatively small total number of results will be available through this method.
    * Much larger result sets may be available using
    * {@link #getBulkKeywordIdeas(TargetingIdeaSelector)} at the price of reduced flexibility in
    * selector options.
-   *
+   * 
    * @param selector Query describing the types of results to return when
    * finding matches (similar keyword ideas/placement ideas).
    * @return A {@link TargetingIdeaPage} of results, that is a subset of the
@@ -8180,16 +8180,16 @@ class TargetingIdeaService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns a page of ideas that match the query described by the specified
    * {@link TargetingIdeaSelector}.  This method is specialized for returning
    * bulk keyword ideas, and thus the selector must be set for
    * {@link com.google.ads.api.services.targetingideas.attributes.RequestType#IDEAS} and
    * {@link com.google.ads.api.services.common.optimization.attributes.IdeaType#KEYWORD}.
    * A limited, fixed set of attributes will be returned.
-   *
+   * 
    * <p>A single-valued
    * {@link com.google.ads.api.services.targetingideas.search.RelatedToUrlSearchParameter}
    * must be supplied.  Single-valued
@@ -8197,17 +8197,17 @@ class TargetingIdeaService extends AdWordsSoapClient {
    * {@link com.google.ads.api.services.targetingideas.search.LocationSearchParameter} are
    * both optional.  Other search parameters compatible with a keyword query may also be
    * supplied.
-   *
+   * 
    * <p>The selector must specify a {@code paging} value, with {@code numberResults} set to 800
    * or less. If a URL based search is performed it will return up to 100 keywords when the site is
    * not owned, or up to 800 if it is. Number of keywords returned on a keyword based search is up
    * to 800. Large result sets must be composed through multiple calls to this method, advancing the
    * paging {@code startIndex} value by {@code numberResults} with each call.
-   *
+   * 
    * <p>This method can make many more results available than {@link #get(TargetingIdeaSelector)},
    * but allows less control over the query. For fine-tuned queries that do not need large numbers
    * of results, prefer {@link #get(TargetingIdeaSelector)}.
-   *
+   * 
    * @param selector Query describing the bulk keyword ideas to return.
    * @return A {@link TargetingIdeaPage} of results, that is a subset of the
    * list of possible ideas meeting the criteria of the

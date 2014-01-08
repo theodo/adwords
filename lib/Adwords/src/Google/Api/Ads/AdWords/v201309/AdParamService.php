@@ -604,9 +604,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1533,12 +1533,12 @@ class StringLengthErrorReason {
 if (!class_exists("AdParamServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns the ad parameters that match the criteria specified in the
  * selector.
- *
+ * 
  * @param serviceSelector Specifies which ad parameters to return.
  * @return A list of ad parameters.
  * @package GoogleApiAdsAdWords
@@ -1574,7 +1574,7 @@ class AdParamServiceGet {
 
 if (!class_exists("AdParamServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1612,20 +1612,20 @@ if (!class_exists("AdParamServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: SET, REMOVE.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Sets and removes ad parameters.
  * <p class="note"><b>Note:</b> {@code ADD} is not supported. Use {@code SET}
  * for new ad parameters.</p>
- *
+ * 
  * <ul class="nolist">
  * <li>{@code SET}: Creates or updates an ad parameter, setting the new
  * parameterized value for the given ad group / keyword pair.
  * <li>{@code REMOVE}: Removes an ad parameter. The <code><var>default-value</var>
- * </code> specified in the ad text will be used.<\li>
+ * </code> specified in the ad text will be used.</li>
  * </ul>
- *
+ * 
  * @param operations The operations to perform.
  * @return A list of ad parameters, where each entry in the list is the
  * result of applying the operation in the input list with the same index.
@@ -1665,7 +1665,7 @@ class AdParamServiceMutate {
 
 if (!class_exists("AdParamServiceMutateResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2660,13 +2660,13 @@ class DatabaseError extends ApiError {
 if (!class_exists("PolicyViolationError", FALSE)) {
 /**
  * Represents violations of a single policy by some text in a field.
- *
+ * 
  * Violations of a single policy by the same string in multiple places
  * within a field is reported in one instance of this class and only one
  * exemption needs to be filed.
  * Violations of a single policy by two different strings is reported
  * as two separate instances of this class.
- *
+ * 
  * e.g. If 'ACME' violates 'capitalization' and occurs twice in a text ad it
  * would be represented by one instance. If the ad also contains 'INC' which
  * also violates 'capitalization' it would be represented in a separate
@@ -2912,7 +2912,7 @@ class AdParamService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/AdParamService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/AdParamService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2926,12 +2926,12 @@ class AdParamService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns the ad parameters that match the criteria specified in the
    * selector.
-   *
+   * 
    * @param serviceSelector Specifies which ad parameters to return.
    * @return A list of ad parameters.
    */
@@ -2947,20 +2947,20 @@ class AdParamService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: SET, REMOVE.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Sets and removes ad parameters.
    * <p class="note"><b>Note:</b> {@code ADD} is not supported. Use {@code SET}
    * for new ad parameters.</p>
-   *
+   * 
    * <ul class="nolist">
    * <li>{@code SET}: Creates or updates an ad parameter, setting the new
    * parameterized value for the given ad group / keyword pair.
    * <li>{@code REMOVE}: Removes an ad parameter. The <code><var>default-value</var>
-   * </code> specified in the ad text will be used.<\li>
+   * </code> specified in the ad text will be used.</li>
    * </ul>
-   *
+   * 
    * @param operations The operations to perform.
    * @return A list of ad parameters, where each entry in the list is the
    * result of applying the operation in the input list with the same index.

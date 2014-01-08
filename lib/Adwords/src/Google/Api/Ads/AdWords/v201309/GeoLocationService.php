@@ -403,9 +403,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1108,11 +1108,11 @@ class StringLengthErrorReason {
 if (!class_exists("GeoLocationServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Retrieves the geographic location information for the address specified.
- *
+ * 
  * @param selector specifies the addresses.
  * @return list of {@link GeoLocation} objects. Returns {@link InvalidGeoLocation} object if
  * the address cannot be geocoded.
@@ -1150,7 +1150,7 @@ class GeoLocationServiceGet {
 
 if (!class_exists("GeoLocationServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2134,7 +2134,7 @@ class GeoLocationService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/GeoLocationService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/GeoLocationService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2148,11 +2148,11 @@ class GeoLocationService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Retrieves the geographic location information for the address specified.
-   *
+   * 
    * @param selector specifies the addresses.
    * @return list of {@link GeoLocation} objects. Returns {@link InvalidGeoLocation} object if
    * the address cannot be geocoded.

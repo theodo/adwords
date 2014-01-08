@@ -632,9 +632,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1851,9 +1851,9 @@ class StringLengthErrorReason {
 if (!class_exists("ExperimentServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns a list of experiments specified by the experiment selector from
  * the customer's account.
  * @param serviceSelector The selector specifying the {@link Experiment}s to return.
@@ -1893,7 +1893,7 @@ class ExperimentServiceGet {
 
 if (!class_exists("ExperimentServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1932,9 +1932,9 @@ if (!class_exists("ExperimentServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Mutates (add, update or remove) experiments.
  * <b>Note:</b> To REMOVE use SET and mark status to DELETED.
  * @param operations A list of unique operations.
@@ -1975,7 +1975,7 @@ class ExperimentServiceMutate {
 
 if (!class_exists("ExperimentServiceMutateResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3430,7 +3430,7 @@ class ExperimentService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/ExperimentService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/ExperimentService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3444,9 +3444,9 @@ class ExperimentService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns a list of experiments specified by the experiment selector from
    * the customer's account.
    * @param serviceSelector The selector specifying the {@link Experiment}s to return.
@@ -3467,9 +3467,9 @@ class ExperimentService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Mutates (add, update or remove) experiments.
    * <b>Note:</b> To REMOVE use SET and mark status to DELETED.
    * @param operations A list of unique operations.

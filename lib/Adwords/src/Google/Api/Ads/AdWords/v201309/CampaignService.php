@@ -658,9 +658,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1016,7 +1016,7 @@ class BiddingScheme {
 if (!class_exists("BiddingStrategyConfiguration", FALSE)) {
 /**
  * Encapsulates the information about bids and bidding strategies.
- *
+ * 
  * Bidding Strategy can be set on campaigns, ad groups or ad group criteria.
  * A bidding strategy can be set using one of the following:
  * <ul>
@@ -1026,11 +1026,11 @@ if (!class_exists("BiddingStrategyConfiguration", FALSE)) {
  * flexible bid strategies.</li>
  * </ul>
  * If the bidding strategy type is used, then schemes are created using default values.
- *
+ * 
  * Bids can be set only on ad groups and ad group criteria. They cannot be set on campaigns.
  * Multiple bids can be set at the same time. Only the bids that apply to the campaign's
  * {@linkplain Campaign#biddingStrategyConfiguration bidding strategy} will be used.
- *
+ * 
  * For more information on flexible bidding, visit the
  * <a href="https://support.google.com/adwords/answer/2979071">Help Center</a>.
  * @package GoogleApiAdsAdWords
@@ -1876,7 +1876,7 @@ class BudgetBudgetPeriod {
 
 if (!class_exists("BudgetBudgetStatus", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2039,7 +2039,7 @@ class ConversionOptimizerBiddingSchemeBidType {
 
 if (!class_exists("ConversionOptimizerBiddingSchemePricingMode", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2580,7 +2580,7 @@ class OperatorErrorReason {
 
 if (!class_exists("PageOnePromotedBiddingSchemeStrategyGoal", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3122,11 +3122,11 @@ class TimeUnit {
 if (!class_exists("CampaignServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns the list of campaigns that meet the selector criteria.
- *
+ * 
  * @param serviceSelector the selector specifying the {@link Campaign}s to return.
  * @return A list of campaigns.
  * @throws ApiException if problems occurred while fetching campaign information.
@@ -3163,7 +3163,7 @@ class CampaignServiceGet {
 
 if (!class_exists("CampaignServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3202,9 +3202,9 @@ if (!class_exists("CampaignServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Adds, updates, or deletes campaigns.
  * <p class="note"><b>Note:</b> {@link CampaignOperation} does not support the
  * <code>REMOVE</code> operator. To delete a campaign, set its
@@ -3247,7 +3247,7 @@ class CampaignServiceMutate {
 
 if (!class_exists("CampaignServiceMutateResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3282,11 +3282,11 @@ class CampaignServiceMutateResponse {
 if (!class_exists("query", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns the list of campaigns that match the query.
- *
+ * 
  * @param query The SQL-like AWQL query string.
  * @return A list of campaigns.
  * @throws ApiException if problems occur while parsing the query or fetching campaign
@@ -3324,7 +3324,7 @@ class query {
 
 if (!class_exists("queryResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3750,15 +3750,15 @@ if (!class_exists("ConversionOptimizerBiddingScheme", FALSE)) {
 /**
  * Conversion optimizer bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.
- *
+ * 
  * <p class="warning">{@code pricingMode} currently defaults to {@code CLICKS} and
  * cannot be changed.</p>
- *
+ * 
  * <p>Note that campaigns must meet <a
  * href="//support.google.com/adwords/bin/answer.py?answer=2471188">specific
- * eligibility requirements</a> before they can use the <code>ConversionOptimizer<\code>
+ * eligibility requirements</a> before they can use the <code>ConversionOptimizer</code>
  * bidding strategy.
- *
+ * 
  * For more information on conversion optimizer, visit the
  * <a href="http://www.google.com/adwords/conversionoptimizer/index.html"
  * >Conversion Optimizer site</a>.
@@ -3885,7 +3885,7 @@ if (!class_exists("EnhancedCpcBiddingScheme", FALSE)) {
 /**
  * Enhanced CPC is a bidding strategy that raises your bids for clicks that seem more likely to
  * lead to a conversion and lowers them for clicks where they seem less likely.
- *
+ * 
  * This bidding scheme does not support criteria level bidding strategy overrides.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -4065,29 +4065,29 @@ class ForwardCompatibilityError extends ApiError {
 if (!class_exists("GeoTargetTypeSetting", FALSE)) {
 /**
  * Represents a collection of settings related to ads geotargeting.
- *
+ * 
  * <p>AdWords ads can be geotargeted using <b>Location of Presence</b> (<b>LOP</b>),
  * <b>Area of Interest</b> (<b>AOI</b>), or both. LOP is the physical location
  * of the user performing the search; AOI is the geographical region
  * in which the searcher is interested. For example, if a user in
  * New York City performs a search "hotels california", their LOP
  * is New York City and their AOI is California.
- *
+ * 
  * <p>Additionally, ads can be <b>positively</b> or <b>negatively</b> geotargeted.
  * An ad that is positively geotargeted to New York City only appears
  * to users whose location is related (via AOI or LOP) to New York City. An ad
  * that is negatively geotargeted to New York City appears for <i>all</i>
- * users <i>except<\i> those whose location is related to New York City. Ads can
+ * users <i>except</i> those whose location is related to New York City. Ads can
  * only be negatively geotargeted if a positive geotargeting is also supplied, and
  * the negatively geotargeted region must be contained within the positive
  * region.
- *
+ * 
  * <p>Geotargeting settings allow ads to be targeted in the following way:
  * <ul>
  * <li> Positively geotargeted using solely AOI, solely LOP, or either.
  * <li> Negatively geotargeted using solely LOP, or both.
  * </ul>
- *
+ * 
  * <p>This setting applies only to ads shown on the search network, and does
  * not affect ads shown on the Google Display Network.
  * @package GoogleApiAdsAdWords
@@ -4214,12 +4214,12 @@ if (!class_exists("KeywordMatchSetting", FALSE)) {
 /**
  * Improved exact and phrase match option includes misspellings, plurals,
  * and other close variants of your keywords.
- *
+ * 
  * Default value set to {@code true} to include close variants. For more
  * information, see the article
  * <a href="https://support.google.com/adwords/bin/answer.py?answer=6100">
  * What are keyword matching options?</a>.
- *
+ * 
  * This setting is required when creating new campaigns.
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
@@ -5640,14 +5640,14 @@ if (!class_exists("TargetCpaBiddingScheme", FALSE)) {
 /**
  * Target Cpa bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.
- *
+ * 
  * This is similar to the <code>ConversionOptimizerBiddingScheme<code> but does not
  * support user-entered AdGroup-level target CPA bids, but rather a strategy-wide
  * average CPA target.
- *
+ * 
  * <p>Note that campaigns must meet <a
  * href="//support.google.com/adwords/bin/answer.py?answer=2471188">specific
- * eligibility requirements</a> before they can use the <code>TargetCpaBiddingScheme<\code>
+ * eligibility requirements</a> before they can use the <code>TargetCpaBiddingScheme</code>
  * bidding strategy.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -5686,7 +5686,7 @@ class TargetCpaBiddingScheme extends BiddingScheme {
 if (!class_exists("TargetSpendBiddingScheme", FALSE)) {
 /**
  * Target Spend bidding scheme, in which Google automatically places
- * bids for the user based on their daily\monthly budget or optional
+ * bids for the user based on their daily/monthly budget or optional
  * spend target.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  * @package GoogleApiAdsAdWords
@@ -6180,7 +6180,7 @@ class CampaignService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/CampaignService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/CampaignService";
 
   /**
    * Constructor using wsdl location and options array
@@ -6194,11 +6194,11 @@ class CampaignService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns the list of campaigns that meet the selector criteria.
-   *
+   * 
    * @param serviceSelector the selector specifying the {@link Campaign}s to return.
    * @return A list of campaigns.
    * @throws ApiException if problems occurred while fetching campaign information.
@@ -6216,9 +6216,9 @@ class CampaignService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, SET.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Adds, updates, or deletes campaigns.
    * <p class="note"><b>Note:</b> {@link CampaignOperation} does not support the
    * <code>REMOVE</code> operator. To delete a campaign, set its
@@ -6238,11 +6238,11 @@ class CampaignService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns the list of campaigns that match the query.
-   *
+   * 
    * @param query The SQL-like AWQL query string.
    * @return A list of campaigns.
    * @throws ApiException if problems occur while parsing the query or fetching campaign

@@ -633,9 +633,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2055,11 +2055,11 @@ class StringLengthErrorReason {
 if (!class_exists("FeedItemServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns a list of FeedItems that meet the selector criteria.
- *
+ * 
  * @param selector Determines which FeedItems to return. If empty all
  * FeedItems are returned.
  * @return The list of FeedItems.
@@ -2097,7 +2097,7 @@ class FeedItemServiceGet {
 
 if (!class_exists("FeedItemServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2135,11 +2135,11 @@ if (!class_exists("FeedItemServiceMutate", FALSE)) {
  * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Add, remove, and set FeedItems.
- *
+ * 
  * @param operations The operations to apply.
  * @return The resulting FeedItems.
  * @throws ApiException Indicates a problem with the request.
@@ -2176,7 +2176,7 @@ class FeedItemServiceMutate {
 
 if (!class_exists("FeedItemServiceMutateResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3357,7 +3357,7 @@ class FeedItemReturnValue extends ListReturnValue {
 
 if (!class_exists("NullStatsPage", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3532,7 +3532,7 @@ class FeedItemService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/FeedItemService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/FeedItemService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3546,11 +3546,11 @@ class FeedItemService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns a list of FeedItems that meet the selector criteria.
-   *
+   * 
    * @param selector Determines which FeedItems to return. If empty all
    * FeedItems are returned.
    * @return The list of FeedItems.
@@ -3568,11 +3568,11 @@ class FeedItemService extends AdWordsSoapClient {
    * <span class="constraint DistinctIds">Elements in this field must have distinct IDs for following {@link Operator}s : SET, REMOVE.</span>
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Add, remove, and set FeedItems.
-   *
+   * 
    * @param operations The operations to apply.
    * @return The resulting FeedItems.
    * @throws ApiException Indicates a problem with the request.

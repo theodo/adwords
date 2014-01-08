@@ -464,9 +464,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -866,7 +866,7 @@ class Selector {
 
 if (!class_exists("AudioErrorReason", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1680,13 +1680,13 @@ class VideoErrorReason {
 if (!class_exists("MediaServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns a list of media that meet the criteria specified by the selector.
  * <p class="note"><b>Note:</b> {@code MediaService} will not return any
  * {@link ImageAd} image files.</p>
- *
+ * 
  * @param serviceSelector Selects which media objects to return.
  * @return A list of {@code Media} objects.
  * @package GoogleApiAdsAdWords
@@ -1722,7 +1722,7 @@ class MediaServiceGet {
 
 if (!class_exists("MediaServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1757,7 +1757,7 @@ class MediaServiceGetResponse {
 if (!class_exists("upload", FALSE)) {
 /**
  * Uploads new media. Currently, you can only upload {@link Image} files.
- *
+ * 
  * @param media A list of {@code Media} objects, each containing the data to
  * be uploaded.
  * @return A list of uploaded media in the same order as the argument list.
@@ -1794,7 +1794,7 @@ class upload {
 
 if (!class_exists("uploadResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3156,7 +3156,7 @@ class MediaService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/MediaService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/MediaService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3170,13 +3170,13 @@ class MediaService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns a list of media that meet the criteria specified by the selector.
    * <p class="note"><b>Note:</b> {@code MediaService} will not return any
    * {@link ImageAd} image files.</p>
-   *
+   * 
    * @param serviceSelector Selects which media objects to return.
    * @return A list of {@code Media} objects.
    */
@@ -3189,7 +3189,7 @@ class MediaService extends AdWordsSoapClient {
 
   /**
    * Uploads new media. Currently, you can only upload {@link Image} files.
-   *
+   * 
    * @param media A list of {@code Media} objects, each containing the data to
    * be uploaded.
    * @return A list of uploaded media in the same order as the argument list.

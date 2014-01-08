@@ -339,9 +339,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1653,11 +1653,11 @@ class StringLengthErrorReason {
 if (!class_exists("AdGroupBidModifierServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Gets ad group level criterion bid modifiers.
- *
+ * 
  * @param selector The selector specifying the {@link AdGroupBidModifier}s to return.
  * @return A list of ad group bid modifiers.
  * @throws ApiException when there is at least one error with the request.
@@ -1694,7 +1694,7 @@ class AdGroupBidModifierServiceGet {
 
 if (!class_exists("AdGroupBidModifierServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -1732,11 +1732,11 @@ if (!class_exists("AdGroupBidModifierServiceMutate", FALSE)) {
  * <span class="constraint NotEmpty">This field must contain at least one element.</span>
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE, SET.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Adds, removes or updates ad group bid modifier overrides.
- *
+ * 
  * @param operations The operations to apply.
  * @return The added ad group bid modifier overrides.
  * @throws ApiException when there is at least one error with the request.
@@ -1773,7 +1773,7 @@ class AdGroupBidModifierServiceMutate {
 
 if (!class_exists("AdGroupBidModifierServiceMutateResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2981,7 +2981,7 @@ class AdGroupBidModifierService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/AdGroupBidModifierService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/AdGroupBidModifierService";
 
   /**
    * Constructor using wsdl location and options array
@@ -2995,11 +2995,11 @@ class AdGroupBidModifierService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Gets ad group level criterion bid modifiers.
-   *
+   * 
    * @param selector The selector specifying the {@link AdGroupBidModifier}s to return.
    * @return A list of ad group bid modifiers.
    * @throws ApiException when there is at least one error with the request.
@@ -3016,11 +3016,11 @@ class AdGroupBidModifierService extends AdWordsSoapClient {
    * <span class="constraint NotEmpty">This field must contain at least one element.</span>
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
    * <span class="constraint SupportedOperators">The following {@link Operator}s are supported: ADD, REMOVE, SET.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Adds, removes or updates ad group bid modifier overrides.
-   *
+   * 
    * @param operations The operations to apply.
    * @return The added ad group bid modifier overrides.
    * @throws ApiException when there is at least one error with the request.

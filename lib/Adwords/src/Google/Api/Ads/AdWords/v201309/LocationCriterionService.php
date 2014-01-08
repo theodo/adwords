@@ -34,9 +34,9 @@ if (!class_exists("ApiError", FALSE)) {
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.
- *
+ * 
  * <p>The OGNL field path is provided for parsers to identify the request data
- * element that may have caused the error.<\p>
+ * element that may have caused the error.</p>
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -2330,7 +2330,7 @@ class Webpage extends Criterion {
 if (!class_exists("WebpageCondition", FALSE)) {
 /**
  * Logical expression for targeting webpages of an advertiser's website.
- *
+ * 
  * <p>A condition is defined as {@code operand OP argument}
  * where {@code operand} is one of the values enumerated in
  * {@link WebpageConditionOperand}, and, based on this value,
@@ -3260,11 +3260,11 @@ class WebpageConditionOperand {
 if (!class_exists("LocationCriterionServiceGet", FALSE)) {
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- *
- *
- *
+ * 
+ * 
+ * 
  * Returns a list of {@link LocationCriterion}'s that match the specified selector.
- *
+ * 
  * @param selector filters the LocationCriterion to be returned.
  * @return A list of location criterion.
  * @throws ApiException when there is at least one error with the request.
@@ -3301,7 +3301,7 @@ class LocationCriterionServiceGet {
 
 if (!class_exists("LocationCriterionServiceGetResponse", FALSE)) {
 /**
- *
+ * 
  * @package GoogleApiAdsAdWords
  * @subpackage v201309
  */
@@ -3520,7 +3520,7 @@ class LocationCriterionService extends AdWordsSoapClient {
    * The endpoint of the service
    * @var string
    */
-  public static $endpoint = "https://adwords-prod-west.qa.adz.google.com/api/adwords/cm/v201309/LocationCriterionService";
+  public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201309/LocationCriterionService";
 
   /**
    * Constructor using wsdl location and options array
@@ -3534,11 +3534,11 @@ class LocationCriterionService extends AdWordsSoapClient {
 
   /**
    * <span class="constraint Required">This field is required and should not be {@code null}.</span>
-   *
-   *
-   *
+   * 
+   * 
+   * 
    * Returns a list of {@link LocationCriterion}'s that match the specified selector.
-   *
+   * 
    * @param selector filters the LocationCriterion to be returned.
    * @return A list of location criterion.
    * @throws ApiException when there is at least one error with the request.
