@@ -13,6 +13,6 @@ add something similar to your composer.json file.
 
     "require": {
         // ...
-        "hackzilla/adwords": "dev-master",
+        "theodo/adwords": "dev-master",
         // ...
     },
