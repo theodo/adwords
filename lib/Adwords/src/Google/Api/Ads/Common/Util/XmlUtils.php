@@ -75,7 +75,7 @@ class XmlUtils {
       $dom = self::GetDomFromXml($xml);
       $dom->formatOutput = true;
       return self::GetXmlFromDom($dom);
-    } catch (DOMException $e) {
+    } catch (\DOMException $e) {
       restore_error_handler();
       return str_replace(array("\r\n", "\n", "\r"), '', $xml);
     }
@@ -155,7 +155,7 @@ class XmlUtils {
    * @return DOMDocument the document representing the object
    */
   public static function ConvertObjectToDocument($object, $rootElementName) {
-    $document = new DOMDocument();
+    $document = new \DOMDocument();
     $document->appendChild(
         self::ConvertObjectToElement($object, $rootElementName, $document));
     return $document;
