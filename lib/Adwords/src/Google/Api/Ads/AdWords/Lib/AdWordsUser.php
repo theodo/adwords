@@ -38,8 +38,10 @@ namespace Google\Api\Ads\AdWords\Lib;
 use Google\Api\Ads\Common\Lib\AdsUser,
     Google\Api\Ads\Common\Util\ApiPropertiesUtils,
     Google\Api\Ads\Common\Util\AuthToken,
-    Google\Api\Ads\AdWords\Util\ReportUtils;
-use Google\Api\Ads\Common\Util\Logger;
+    Google\Api\Ads\AdWords\Util\ReportUtils,
+    Google\Api\Ads\Common\Lib\SoapClientFactory,
+    Google\Api\Ads\Common\Lib\ValidationException,
+    Google\Api\Ads\Common\Util\Logger;
 
 
 /**
