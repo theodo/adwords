@@ -13,6 +13,6 @@ add something similar to your composer.json file.
 
     "require": {
         // ...
-        "theodo/adwords": "dev-master",
+        "theodo/adwords": "5.4.0",
         // ...
     },
