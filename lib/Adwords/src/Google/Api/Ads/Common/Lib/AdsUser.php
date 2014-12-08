@@ -504,4 +504,3 @@ abstract class AdsUser {
     }
   }
 }
-
